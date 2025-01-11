@@ -1,0 +1,26 @@
+<FTL>
+<animSheet name="arc_trade_cargo_expansion1" w="37" h="25" fw="37" fh="25">arc_trading/arc_trade_cargo_expansion1.png</animSheet>
+<anim name="arc_trade_cargo_expansion1">
+    <sheet>arc_trade_cargo_expansion1</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_cargo_expansion2" w="37" h="25" fw="37" fh="25">arc_trading/arc_trade_cargo_expansion2.png</animSheet>
+<anim name="arc_trade_cargo_expansion2">
+    <sheet>arc_trade_cargo_expansion2</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_cargo_expansion3" w="37" h="25" fw="37" fh="25">arc_trading/arc_trade_cargo_expansion3.png</animSheet>
+<anim name="arc_trade_cargo_expansion3">
+    <sheet>arc_trade_cargo_expansion3</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_cargo_expansion4" w="37" h="25" fw="37" fh="25">arc_trading/arc_trade_cargo_expansion4.png</animSheet>
+<anim name="arc_trade_cargo_expansion4">
+    <sheet>arc_trade_cargo_expansion4</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+</FTL>

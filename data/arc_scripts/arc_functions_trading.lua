@@ -82,6 +82,7 @@ local cargoList = {
 	{name = "Shuttle Parts", basePrice = 1000, type = 6, supply = 6, demand = {false, true, false, false, false, false, true, true}, average = 0 }
 }
 
+local deliveryTable = {}
 
 local industryListShort = {}
 industryListShort[1] = "Con"
@@ -195,44 +196,43 @@ local function generateInventory(type, event, level)
 	for i, c in ipairs(cargoList) do
 		local mod = math.ceil(1000/c.basePrice)
 		local number = mod + math.ceil(math.random() * 0.3 * mod)
-		local trend = (math.random() - 0.5) * (c.basePrice * 0.05)
-		local price = c.basePrice + (0.1 * c.basePrice * (1 + level)) + (math.random() * c.basePrice)
+		local trend = math.random(-3,3)
+		local price = c.basePrice + (0.02 * c.basePrice * (1 + level)) + (0.1 * math.random() * c.basePrice) + math.random(-3, 3)
 		if type == c.supply then
 			number = number * 5
-			price = price / 1.5
-			trend = -1 * math.abs(trend)
+			price = price * 0.9
+			trend = math.ceil(trend / 2)
 		elseif c.demand[type] then 
 			number = math.floor(number * (0.2 + (math.random() * 0.25)))
-			price = price * 1.5
-			trend = math.abs(trend / 2)
+			price = price * 1.1
+			trend = trend * 2
 		end
 
 		if event == 2 and (c.type == 2 or c.type == 3) then
 			number = math.floor(number * (0.4 + (math.random() * 0.35)))
-			price = price * 1.2
+			price = price * 1.05
 		elseif event == 3 and (c.type == 1 or c.type == 6) then
 			number = math.floor(number * (0.4 + (math.random() * 0.35)))
-			price = price * 1.2
+			price = price * 1.05
 		elseif event == 4 and (c.type == 2 or c.type == 5) then
 			number = math.floor(number * (0.4 + (math.random() * 0.35)))
-			price = price * 1.2
+			price = price * 1.05
 		elseif event == 5 and not c.type == 2 then
 			number = math.floor(number * (0.4 + (math.random() * 0.35)))
-			price = price * 1.2
+			price = price * 1.05
 		elseif event == 6 and (c.type == 1 or c.type == 4) then
 			number = math.floor(number * (0.4 + (math.random() * 0.35)))
-			price = price * 1.2
+			price = price * 1.05
 		end
 		if math.random() > 0.7 then 
 			number = 0 
-			trend = math.abs(trend/2)
+			trend = math.abs(math.ceil(trend/2))
 			if c.demand[type] then
-				price = 1.5 * price
-				trend = 3 * trend
+				price = 1.05 * price
+				trend = 2 * trend
 			end
 		end
 		price = math.ceil(math.max(1, price))
-		trend = math.floor(trend)
 		inventory[i] = {number = number, trend = trend, price = price}
 	end
 	return inventory
@@ -393,11 +393,9 @@ local function generateSector()
 		if event == 5 then tariff = tariff + 0.1 end
 		local rate = 70 + 10 * map.worldLevel + math.random(1, 20 + 5 * map.worldLevel)
 		--print("ADD PLANET: beacon:"..beaconNumber.." planetImage:"..planet.." name:"..name.." type:"..type.." event:"..event.." tariff:"..tariff.." exchangeRate:"..rate)
-
 		planetTableList[i] = {beacon = beaconNumber, planet = planet, name = name, type = type, event = event, inventory = generateInventory(type, event, map.worldLevel), tariff = tariff, exchangeRate = rate}
 		calculateAverage()
 	end
-	
 	savePlanets()
 end
 
@@ -437,6 +435,10 @@ end
 script.on_game_event("START_BEACON_EXPLAIN", false, function()
     generateSector()
     playerCredits = 0
+    playerInventory = generateBlankPlayerInventory()
+    savePlayerInventory()
+    calculateCargo()
+    savePlanets()
 end)
 local lastWorldLevel = 0
 script.on_internal_event(Defines.InternalEvents.ON_TICK, function()
@@ -1127,13 +1129,13 @@ local function RenderTab2(mousePos)
 		    else
 		        Graphics.CSurface.GL_RenderPrimitive(itemPlanetOff)
 		    end
-		    if v.price < InfoTable.average - InfoTable.basePrice then 
+		    if v.price < InfoTable.average - 0.15 * InfoTable.basePrice then 
 		        Graphics.CSurface.GL_RenderPrimitive(itemTrend1)
-		    elseif v.price < InfoTable.average - 0.4 * InfoTable.basePrice then 
+		    elseif v.price < InfoTable.average - 0.05 * InfoTable.basePrice then 
 		        Graphics.CSurface.GL_RenderPrimitive(itemTrend2)
-		    elseif v.price > InfoTable.average + InfoTable.basePrice then 
+		    elseif v.price > InfoTable.average + 0.15 * InfoTable.basePrice then 
 		        Graphics.CSurface.GL_RenderPrimitive(itemTrend5)
-		    elseif v.price > InfoTable.average + 0.4 * InfoTable.basePrice then 
+		    elseif v.price > InfoTable.average + 0.05 * InfoTable.basePrice then 
 		        Graphics.CSurface.GL_RenderPrimitive(itemTrend4)
 		    else
 		        Graphics.CSurface.GL_RenderPrimitive(itemTrend3)
@@ -1541,13 +1543,13 @@ local function RenderTab3(mousePos)
 
 			    local itemPrice = planetTable.inventory[i].price
 
-			    if itemPrice < InfoTable.average - InfoTable.basePrice then 
+			    if itemPrice < InfoTable.average - 0.15 * InfoTable.basePrice then 
 			        Graphics.CSurface.GL_RenderPrimitive(itemTrend1)
-			    elseif itemPrice < InfoTable.average - 0.4 * InfoTable.basePrice then 
+			    elseif itemPrice < InfoTable.average - 0.05 * InfoTable.basePrice then 
 			        Graphics.CSurface.GL_RenderPrimitive(itemTrend2)
-			    elseif itemPrice > InfoTable.average + InfoTable.basePrice then 
+			    elseif itemPrice > InfoTable.average + 0.15 * InfoTable.basePrice then 
 			        Graphics.CSurface.GL_RenderPrimitive(itemTrend5)
-			    elseif itemPrice > InfoTable.average + 0.4 * InfoTable.basePrice then 
+			    elseif itemPrice > InfoTable.average + 0.05 * InfoTable.basePrice then 
 			        Graphics.CSurface.GL_RenderPrimitive(itemTrend4)
 			    else
 			        Graphics.CSurface.GL_RenderPrimitive(itemTrend3)
@@ -1620,7 +1622,7 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
     bAmountHover = 0
     currentPlanet = -1
 	local mousePos = Hyperspace.Mouse.position
-	if (Hyperspace.ships.enemy and Hyperspace.ships.enemy._targetable.hostile) or inMenu then
+	if (Hyperspace.ships.enemy and Hyperspace.ships.enemy._targetable.hostile) or inMenu or commandGui.menu_pause or commandGui.event_pause then
 		Graphics.CSurface.GL_RenderPrimitive(menuButtonOff)
 	elseif mousePos.x > 1207 + 7 and mousePos.x < 1207 + 45 and mousePos.y > 608 + 7 and mousePos.y < 608 + 45 then
     	menuButtonHover = true
@@ -1700,15 +1702,12 @@ local planettag3r = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading
 script.on_render_event(Defines.RenderEvents.GUI_CONTAINER, function() end, function() 
 	local map = Hyperspace.App.world.starMap
 	if map.bOpen then
-		--print("OPEN")
 		for i, pTable in ipairs(planetTableList) do
 			if pTable.beacon > -1 then
 				local location = map.locations[pTable.beacon]
 				local locX = location.loc.x
 				local locY = location.loc.y
 				local size = Graphics.freetype.easy_measureWidth(51, planetNameList[pTable.name]) - 8
-				--print(size)
-				--Graphics.CSurface.GL_DrawRect(locX + 385, locY + 122, 10, 10, Graphics.GL_Color(1, 1, 1, 1))
 				Graphics.CSurface.GL_PushMatrix()
 		        Graphics.CSurface.GL_Translate(locX + 385, locY + 122, 0)
 				Graphics.CSurface.GL_RenderPrimitive(planettag3l)
@@ -1784,6 +1783,8 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 	elseif exchangeMultHover == 3 then
 		exchangeMult = 100
 	end
+
+
 
 	if planetLeftButton then
 		--print("left")
@@ -1904,10 +1905,12 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
         	playerCredits = playerCredits - planetTableList[currentPlanet].inventory[selectedBuyItem].price * buyAmt 
 			planetTableList[currentPlanet].inventory[selectedBuyItem].number = planetTableList[currentPlanet].inventory[selectedBuyItem].number - buyAmt
 			playerInventory[selectedBuyItem].number = playerInventory[selectedBuyItem].number + buyAmt
+			planetTableList[currentPlanet].inventory[selectedBuyItem].trend = planetTableList[currentPlanet].inventory[selectedBuyItem].trend - math.ceil(buyAmt / 10) 
 		else
 			playerCredits = playerCredits + planetTableList[currentPlanet].inventory[selectedBuyItem].price * buyAmt - math.floor(planetTableList[currentPlanet].inventory[selectedBuyItem].price * buyAmt * planetTableList[currentPlanet].tariff)
 			playerInventory[selectedBuyItem].number = playerInventory[selectedBuyItem].number - buyAmt
 			planetTableList[currentPlanet].inventory[selectedBuyItem].number = planetTableList[currentPlanet].inventory[selectedBuyItem].number + buyAmt
+			planetTableList[currentPlanet].inventory[selectedBuyItem].trend = planetTableList[currentPlanet].inventory[selectedBuyItem].trend + math.ceil(buyAmt / 10) 
 		end
 		buyAmt = 0
 		calculateCargo()
@@ -1986,20 +1989,36 @@ script.on_internal_event(Defines.InternalEvents.ON_KEY_UP, function(key)
 end)
 
 local addLootRoom = false
+local hasBeenHostile = false
 
 script.on_internal_event(Defines.InternalEvents.CONSTRUCT_SHIP_MANAGER, function(ship)
 	--print("CONSTRUCT")
 	if ship.iShipId == 1 and Hyperspace.metaVariables["arctrade_loot_room"] == -1 then
 		if math.random(1,4) == 1 then
 			addLootRoom = true
+			hasBeenHostile = false
 		end
 	end
 end)
 
 script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function()
 	--print("JUMP")
+	inMenu = false
+	hasBeenHostile = false
 	Hyperspace.metaVariables["arctrade_loot_room"] = -1
+	for i, planetTable in ipairs(planetTableList) do
+		for item, iTab in ipairs(planetTable.inventory) do
+			iTab.price = math.max(10, iTab.price + iTab.trend)
+			iTab.trend = -1 * iTab.trend + math.random(-1, 1)
+		end
+	end
 end)
+
+script.on_internal_event(Defines.InternalEvents.JUMP_ARRIVE, function()
+	--print("JUMP")
+	inMenu = false
+end)
+
 
 local lootOverlay = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/s_loot_overlay.png", -16, -16, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 local lootLevel = 0
@@ -2028,7 +2047,9 @@ script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
 		end
 		local commandGui = Hyperspace.Global.GetInstance():GetCApp().gui
 		if Hyperspace.metaVariables["arctrade_loot_room"] >= 0 then
-
+			if Hyperspace.ships.enemy._targetable.hostile then
+				hasBeenHostile = true
+			end
 			local roomId = Hyperspace.metaVariables["arctrade_loot_room"]
 			local location = shipManager:GetRoomCenter(roomId)
 		    Graphics.CSurface.GL_DrawRect(location.x + 6 - 16, location.y + 12 - 16, 20, 11, Graphics.GL_Color(1, 1, 1, 1))
@@ -2046,7 +2067,7 @@ script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
 			        	hasFriendlyCrew = true
 			        end
 			    end
-			    if (hasFriendlyCrew and not hasAnyECrew) or not (Hyperspace.ships.enemy._targetable.hostile and hasAnyECrew) then
+			    if (hasFriendlyCrew and not hasAnyECrew) or (hasBeenHostile and not (Hyperspace.ships.enemy._targetable.hostile and hasAnyECrew)) then
 			    	lootLevel = 20
 			    elseif hasFriendlyCrew and not hasEnemyCrew then
 			    	lootLevel = lootLevel + Hyperspace.FPS.SpeedFactor/16

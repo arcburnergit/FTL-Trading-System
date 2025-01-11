@@ -1,0 +1,115 @@
+<FTL>
+
+<augBlueprint name="ARC_TRADE_CARGO1">
+    <title>Cargo Compactor MK 1</title>
+    <desc>Multiplies Cargo Capacity by 1.1x.
+Only the highest tier cargo compactor will apply.</desc>
+    <cost>20</cost>
+    <bp>8</bp>
+    <rarity>3</rarity>
+</augBlueprint>
+<augBlueprint name="ARC_TRADE_CARGO2">
+    <title>Cargo Compactor MK 2</title>
+    <desc>Multiplies Cargo Capacity by 1.25x.
+Only the highest tier cargo compactor will apply.</desc>
+    <cost>50</cost>
+    <bp>8</bp>
+    <rarity>4</rarity>
+</augBlueprint>
+<augBlueprint name="ARC_TRADE_CARGO3">
+    <title>Cargo Compactor MK 3</title>
+    <desc>Multiplies Cargo Capacity by 1.5x.
+Only the highest tier cargo compactor will apply.</desc>
+    <cost>80</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_EXPAND1">
+	<type>BEAM</type>
+	<flavorType>Cargo Expansion</flavorType>
+	<tip>tip_storage</tip>
+	<title>Cargo Expansion MK 1</title>
+	<short>Cargo Exp. 1</short>
+	<desc>Increases cargo capacity by 10 tons.
+Stacks with other cargo expansions.</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>2</rarity>
+	<power>0</power>
+	<cost>15</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_cargo_expansion1</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_EXPAND2">
+	<type>BEAM</type>
+	<flavorType>Cargo Expansion</flavorType>
+	<tip>tip_storage</tip>
+	<title>Cargo Expansion MK 2</title>
+	<short>Cargo Exp. 2</short>
+	<desc>Increases cargo capacity by 25 tons.
+Stacks with other cargo expansions.</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>3</rarity>
+	<power>0</power>
+	<cost>35</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_cargo_expansion2</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_EXPAND3">
+	<type>BEAM</type>
+	<flavorType>Cargo Expansion</flavorType>
+	<tip>tip_storage</tip>
+	<title>Cargo Expansion MK 3</title>
+	<short>Cargo Exp. 3</short>
+	<desc>Increases cargo capacity by 45 tons.
+Stacks with other cargo expansions.</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>4</rarity>
+	<power>0</power>
+	<cost>60</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_cargo_expansion3</iconReplace>
+</weaponBlueprint>
+<weaponBlueprint name="ARC_TRADE_EXPAND4">
+	<type>BEAM</type>
+	<flavorType>Cargo Expansion</flavorType>
+	<tip>tip_storage</tip>
+	<title>Cargo Expansion MK 4</title>
+	<short>Cargo Exp. 4</short>
+	<desc>Increases cargo capacity by 70 tons.
+Stacks with other cargo expansions.</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>5</rarity>
+	<power>0</power>
+	<cost>90</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_cargo_expansion4</iconReplace>
+</weaponBlueprint>
+
+</FTL>

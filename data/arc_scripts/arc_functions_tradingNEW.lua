@@ -1,29 +1,29 @@
 
 --Button to open the trading menu
-local menuButtonOff = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_button_off.png", 1207, 608, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local menuButtonOn = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_button_on.png", 1207, 608, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local menuButtonSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_button_select2.png", 1207, 608, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+--local menuButtonOff = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_button_off.png", 1207, 608, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+--local menuButtonOn = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_button_on.png", 1207, 608, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+--local menuButtonSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_button_select2.png", 1207, 608, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 --Menu Back and stencil
-local backImage = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local backImageStencil = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main_stencil.png", -640, -320, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local backImage = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local backImageStencil = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main_stencil.png", -650, -320, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 --Tab Buttons
-local tab1Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab1.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab2Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab2.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab3Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab3.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab4Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab4.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab5Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab5.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab1ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab1_select.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab2ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab2_select.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab3ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab3_select.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab4ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab4_select.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local tab5ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab5_select.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab1Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab1.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab2Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab2.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab3Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab3.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab4Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab4.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+--local tab5Image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab5.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab1ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab1_select.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab2ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab2_select.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab3ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab3_select.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local tab4ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab4_select.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+--local tab5ImageSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_tab5_select.png", 325-48, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 --Tabs Static Background
-local backImageTab1 = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main_tab1.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+--local backImageTab1 = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main_tab1.png", 325, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 local backImageTab2 = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main_tab2.png", -143, -143, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local backImageTab4 = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main_tab4.png", 335, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local backImageTab4 = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_main_tab4.png", 325, 78, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 --planetImages for tab2
 local planetImageTag = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/planettag.png", -45, -45-17, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
@@ -51,9 +51,9 @@ local planettag1c = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading
 local planettag1r = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/planettag1r.png", -45, -45-17, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 --<Back button
-local backButtonTab2Off = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_back_off.png", 355, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local backButtonTab2On = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_back_on.png", 355, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local backButtonTab2Select = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_back_select2.png", 355, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local backButtonTab2Off = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_back_off.png", 345, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local backButtonTab2On = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_back_on.png", 345, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local backButtonTab2Select = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_back_select2.png", 345, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 --Credits to scrap exchange buttons
 local exchangeButton = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_ex_button.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
@@ -65,7 +65,7 @@ local switchButtonOn = Hyperspace.Resources:CreateImagePrimitiveString("arc_trad
 local switchButtonSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_switch_select2.png", 874, 180, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 -- Selected Item Side Images
-local sidebarTop = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_sidebar_top.png", 679, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local sidebarTop = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_sidebar_top.png", 669, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 -- With Jettison
 local sidebarBot = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_sidebar_bot.png", 679, 142, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
@@ -79,8 +79,12 @@ local jettisonButton = Hyperspace.Resources:CreateImagePrimitiveString("arc_trad
 local jettisonButtonSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_jettison.png", 743, 511, 0, Graphics.GL_Color(58/255, 127/255, 255/255, 1), 1, false)
 
 --Buy Button
-local buyButton = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_buy.png", 743, 511, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local buyButtonSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_buy.png", 743, 511, 0, Graphics.GL_Color(58/255, 127/255, 255/255, 1), 1, false)
+local buyButton = {on = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_buy.png", 743, 511, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false),
+	off = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_buy.png", 743, 511, 0, Graphics.GL_Color(160/255, 162/255, 171/255, 1), 1, false),
+	select = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_buy.png", 743, 511, 0, Graphics.GL_Color(58/255, 127/255, 255/255, 1), 1, false)
+}
+--local buyButtonOff = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_buy.png", 743, 511, 0, Graphics.GL_Color(160/255, 162/255, 171/255, 1), 1, false)
+--local buyButtonSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_buy.png", 743, 511, 0, Graphics.GL_Color(58/255, 127/255, 255/255, 1), 1, false)
 
 --Sell Button
 local sellButton = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_sell.png", 743, 511, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
@@ -169,14 +173,14 @@ local typeImages = {
 }
 
 -- Right Arrow Button
-local arrowROff = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_r_off.png", 563, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local arrowROn = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_r_on.png", 563, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local arrowRSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_r_select2.png", 563, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local arrowROff = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_r_off.png", 553, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local arrowROn = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_r_on.png", 553, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local arrowRSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_r_select2.png", 553, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 -- Left Arrow Button
-local arrowLOff = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_l_off.png", 362, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local arrowLOn = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_l_on.png", 362, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
-local arrowLSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_l_select2.png", 362, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local arrowLOff = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_l_off.png", 352, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local arrowLOn = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_l_on.png", 352, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
+local arrowLSelect = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_arrow_l_select2.png", 352, 330, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 
 --quest box
 local questBox = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/trade_quest_back.png", 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
@@ -210,55 +214,200 @@ end
 
 mods.arcTrade.planetNameList = {
 	"Lizzards mum",
-	"Planet-A",
-	"Planet-B",
-	"Planet-C",
-	"Planet-D",
-	"Planet-E",
-	"Planet-F",
-	"Planet-G",
-	"Planet-H",
-	"Planet-I",
-	"Planet-J",
-	"Planet-K",
-	"Planet-L",
-	"Planet-M",
-	"Planet-N",
-	"Planet-O",
-	"Planet-P",
-	"Planet-Q",
-	"Planet-R",
-	"Planet-S",
-	"Planet-T",
-	"Planet-U",
-	"Planet-V",
-	"Planet-W",
 	"Planet-X",
-	"Planet-Y",
-	"Planet-Z"
+	"Hawk 2-A",
+	"Cyclotron",
+	"Grease 12 b",
+	"E_r#or ###2#432w2",
+	"Zoltooine",
+	"Spe",
+	"Arion",
+	"Arkas",
+	"Orbitar",
+	"Taphao Thong",
+	"Taphao Kaew",
+	"Dimidium",
+	"Galileo",
+	"Brahe",
+	"Lipperhey",
+	"Janssen",
+	"Harriot",
+	"Ægir",
+	"Amateru",
+	"Dagon",
+	"Tadmor",
+	"Meztli",
+	"Smertrios",
+	"Hypatia",
+	"Quijote",
+	"Dulcinea",
+	"Rocinante",
+	"Sancho",
+	"Thestias",
+	"Saffar",
+	"Samh",
+	"Majriti",
+	"Fortitudo",
+	"Draugr",
+	"Poltergeist",
+	"Phobetor",
+	"Arber",
+	"Tassili",
+	"Madriu",
+	"Naqaỹa",
+	"Bocaprins",
+	"Yanyan",
+	"Sissi",
+	"Ganja",
+	"Tondra",
+	"Eburonia",
+	"Drukyul",
+	"Yvaga",
+	"Naron",
+	"Guarani",
+	"Mastika",
+	"Bendida",
+	"Nakanbé",
+	"Awasis",
+	"Caleuche",
+	"Wangshu",
+	"Melquíades",
+	"Pipitea",
+	"Ditsö̀",
+	"Asye",
+	"Veles",
+	"Finlay",
+	"Onasilos",
+	"Makropulos",
+	"Surt",
+	"Boinayel",
+	"Eyeke",
+	"Cayahuanca",
+	"Hämarik",
+	"Abol",
+	"Hiisi",
+	"Bélisama",
+	"Mintome",
+	"Neri",
+	"Toge",
+	"Iolaus",
+	"Koyopa'",
+	"Indépendance",
+	"Ixbalanqué",
+	"Victoriapeak",
+	"Magor",
+	"Fold",
+	"Santamasa",
+	"Noifasui",
+	"Kavian",
+	"Babylonia",
+	"Bran",
+	"Alef",
+	"Lete",
+	"Chura",
+	"Wadirum",
+	"Buru",
+	"Staburags",
+	"Beirut",
+	"Umbäässa",
+	"Vytis",
+	"Peitruss",
+	"Trimobe",
+	"Baiduri",
+	"Ġgantija",
+	"Cuptor",
+	"Xólotl",
+	"Isli",
+	"Hairu",
+	"Bagan",
+	"Laligurans",
+	"Nachtwacht",
+	"Kererū",
+	"Xolotlan",
+	"Equiano",
+	"Albmi",
+	"Perwana",
+	"Jebus",
+	"Pollera",
+	"Tumearandu",
+	"Sumajmajta",
+	"Haik",
+	"Leklsullun",
+	"Pirx",
+	"Viriato",
+	"Aumatex",
+	"Negoiu",
+	"Teberda",
+	"Dopere",
+	"Vlasina",
+	"Viculus",
+	"Kráľomoc",
+	"Iztok",
+	"Krotoa",
+	"Halla",
+	"Riosar",
+	"Samagiya",
+	"Isagel",
+	"Eiger",
+	"Ugarit",
+	"Sazum",
+	"Tanzanite",
+	"Maeping",
+	"Agouto",
+	"Ramajay",
+	"Khomsa",
+	"Göktürk",
+	"Tryzub",
+	"Barajeel",
+	"Cruinlagh",
+	"Mulchatna",
+	"Ibirapitá",
+	"Madalitso",
+	"Bambaruush[1]",
+	"Tahay",
+	"Awohali",
+	"Su",
+	"Enaiposha",
+	"Phailinsiam",
+	"Puli",
+	"Guataubá",
+	"Zembretta",
+	"Levantes",
+	"Najsakopajk",
+	"Qingluan",
+	"Kua'kua",
+	"Cuancoá",
+	"Banksia",
+	"Astrolábos",
+	"Regoč",
+	"Makombé",
+	"Tylos",
+	"Catalineta",
+	"Ahra"
 }
 local planetNameList = mods.arcTrade.planetNameList
 
+local itemNoImage = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/none.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false)
 local cargoList = {
-	{name = "Steel", basePrice = 80, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, true}, average = 0 },
-	{name = "Aluminium", basePrice = 25, type = 1, supply = 2, demand = {false, false, true, false, false, false, true, true}, average = 0 },
-	{name = "Titanium", basePrice = 160, type = 1, supply = 2, demand = {false, false, true, false, false, true, false, true}, average = 0 },
-	{name = "Nickel", basePrice = 95, type = 1, supply = 2, demand = {false, false, true, false, false, true, false, true}, average = 0 },
-	{name = "Copper", basePrice = 30, type = 1, supply = 2, demand = {false, false, true, false, false, false, true, false}, average = 0 },
-	{name = "Iron", basePrice = 45, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, false}, average = 0 },
-	{name = "Iridium", basePrice = 420, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, false}, average = 0 },
-	{name = "Rhodium", basePrice = 700, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, false}, average = 0 }, 
+	{name = "Steel", basePrice = 80, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, true}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/steel.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Aluminium", basePrice = 25, type = 1, supply = 2, demand = {false, false, true, false, false, false, true, true}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/aluminium.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Titanium", basePrice = 160, type = 1, supply = 2, demand = {false, false, true, false, false, true, false, true}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/titanium.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Nickel", basePrice = 95, type = 1, supply = 2, demand = {false, false, true, false, false, true, false, true}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/nickel.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Copper", basePrice = 30, type = 1, supply = 2, demand = {false, false, true, false, false, false, true, false}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/copper.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Iron", basePrice = 45, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, false}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/iron.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Iridium", basePrice = 420, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, false}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/iridium.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Rhodium", basePrice = 700, type = 1, supply = 2, demand = {true, false, true, false, false, true, false, false}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/rhodium.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) }, 
 
-	{name = "Grain", basePrice = 25, type = 2, supply = 4, demand = {true, false, false, false, false, false, true, false}, average = 0 },
-	{name = "Baked Goods", basePrice = 55, type = 2, supply = 4, demand = {false, false, false, false, false, false, true, false}, average = 0 },
-	{name = "Animal Meat", basePrice = 80, type = 2, supply = 4, demand = {false, false, false, false, false, false, true, true}, average = 0 },
-	{name = "Vegetables", basePrice = 35, type = 2, supply = 4, demand = {false, false, false, false, false, false, true, false}, average = 0 },
-	{name = "Synthetic Meat", basePrice = 95, type = 2, supply = 3, demand = {false, false, false, false, false, false, true, true}, average = 0 },
+	{name = "Grain", basePrice = 25, type = 2, supply = 4, demand = {true, false, false, false, false, false, true, false}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/grain.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Baked Goods", basePrice = 55, type = 2, supply = 4, demand = {false, false, false, false, false, false, true, false}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/baked_goods.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Animal Meat", basePrice = 80, type = 2, supply = 4, demand = {false, false, false, false, false, false, true, true}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/animal_meat.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Vegetables", basePrice = 35, type = 2, supply = 4, demand = {false, false, false, false, false, false, true, false}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/vegetables.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
+	{name = "Synthetic Meat", basePrice = 95, type = 2, supply = 3, demand = {false, false, false, false, false, false, true, true}, average = 0, image = Hyperspace.Resources:CreateImagePrimitiveString("arc_trading/resources/synthetic_meat.png", 679+67, 142+117, 0, Graphics.GL_Color(1, 1, 1, 1), 1, false) },
 	{name = "Basic Rations", basePrice = 60, type = 2, supply = 4, demand = {true, true, true, false, false, false, false, false}, average = 0 },
 	{name = "Adv. Rations", basePrice = 120, type = 2, supply = 4, demand = {false, false, false, false, false, true, true, true}, average = 0 },
 
 	{name = "Basic Medicines", basePrice = 40, type = 3, supply = 3, demand = {false, false, false, true, false, false, true, false}, average = 0 },
-	{name = "Stimulents", basePrice = 120, type = 3, supply = 3, demand = {false, false, false, false, false, true, false, true}, average = 0 },
+	{name = "Stimulants", basePrice = 120, type = 3, supply = 3, demand = {false, false, false, false, false, true, false, true}, average = 0 },
 	{name = "Adv. Medicines", basePrice = 210, type = 3, supply = 3, demand = {false, false, false, true, false, false, true, false}, average = 0 },
 	{name = "Power Cells", basePrice = 120, type = 3, supply = 5, demand = {false, true, false, false, false, true, true, true}, average = 0 },
 	{name = "Ion Distributor", basePrice = 80, type = 3, supply = 3, demand = {false, false, false, false, true, false, true, true}, average = 0 },
@@ -327,6 +476,105 @@ local questList = {
 	"SOURCE", 
 	"Source" -- next sector
 }
+
+mods.arcTrade.licenseList = {}
+local licenseList = mods.arcTrade.licenseList
+licenseList["STANDARD_SPACE"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["CIVILIAN_SECTOR"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECTOR_UNION"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECTOR_UNION_UNIQUE"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECTOR_MILITIA_UNIQUE"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECTOR_FEDERATION_UNIQUE"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECTOR_FREEMANTIS"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECTOR_FREEMANTIS_UNIQUE"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECTOR_ASTEROID_GENERIC"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["SECRET_SPIDER"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+licenseList["FINAL"] = {"Civilian Trading License", "ARC_TRADE_LICENSE_CIV"}
+
+licenseList["SECTOR_HACKER_UNIQUE"] = {"C1vi|i@n Trading License", "ARC_TRADE_LICENSE_HACKER"}
+
+licenseList["SECTOR_HARMONY"] = {"Harmony Trading License", "ARC_TRADE_LICENSE_HARM"}
+licenseList["SECTOR_HARMONY_UNIQUE"] = {"Harmony Trading License", "ARC_TRADE_LICENSE_HARM"}
+
+licenseList["SECTOR_MINISTRY"] = {"Zoltan Trading License", "ARC_TRADE_LICENSE_ZOLT"}
+licenseList["SECTOR_MINISTRY_UNIQUE"] = {"Zoltan Trading License", "ARC_TRADE_LICENSE_ZOLT"}
+licenseList["SECTOR_DUSKBRINGER"] = {"Zoltan Trading License", "ARC_TRADE_LICENSE_ZOLT"}
+licenseList["SECTOR_DUSKBRINGER_UNIQUE"] = {"Zoltan Trading License", "ARC_TRADE_LICENSE_ZOLT"}
+licenseList["SECTOR_MONK_UNIQUE"] = {"Zoltan Trading License", "ARC_TRADE_LICENSE_ZOLT"}
+
+licenseList["SECTOR_GATHERING"] = {"Orchid Trading License", "ARC_TRADE_LICENSE_ORC"}
+licenseList["SECTOR_GATHERING_UNIQUE"] = {"Orchid Trading License", "ARC_TRADE_LICENSE_ORC"}
+licenseList["SECTOR_CONFEDERATE"] = {"Orchid Trading License", "ARC_TRADE_LICENSE_ORC"}
+licenseList["SECTOR_CONFEDERATE_UNIQUE"] = {"Orchid Trading License", "ARC_TRADE_LICENSE_ORC"}
+
+licenseList["SECTOR_OUTCAST"] = {"Outcast Trading License", "ARC_TRADE_LICENSE_OUT"}
+licenseList["SECTOR_OUTCAST_UNIQUE"] = {"Outcast Trading License", "ARC_TRADE_LICENSE_OUT"}
+licenseList["SECTOR_LOSTSUN_UNIQUE"] = {"Outcast Trading License", "ARC_TRADE_LICENSE_OUT"}
+
+licenseList["SECTOR_IMPERIAL"] = {"Crystal Trading License", "ARC_TRADE_LICENSE_CRYS"}
+licenseList["SECTOR_IMPERIAL_UNIQUE"] = {"Crystal Trading License", "ARC_TRADE_LICENSE_CRYS"}
+licenseList["SECRET_ORIGINS"] = {"Crystal Trading License", "ARC_TRADE_LICENSE_CRYS"}
+licenseList["SECRET_ORIGINS_RUWEN"] = {"Crystal Trading License", "ARC_TRADE_LICENSE_CRYS"}
+
+licenseList["SECTOR_SEPARATIST"] = {"Seperatist Trading License", "ARC_TRADE_LICENSE_SEP"}
+licenseList["SECTOR_SEPARATIST_UNIQUE"] = {"Seperatist Trading License", "ARC_TRADE_LICENSE_SEP"}
+
+licenseList["SECTOR_PIRATE"] = {"Pirate Trading License", "ARC_TRADE_LICENSE_PIRATE"}
+licenseList["SECTOR_PIRATE_UNIQUE"] = {"Pirate Trading License", "ARC_TRADE_LICENSE_PIRATE"}
+
+licenseList["SECTOR_PIRATE_HEKTAR"] = {"Hektar Trading License", "ARC_TRADE_LICENSE_HEKTAR"}
+licenseList["SECTOR_KLEPTOCRACY_HEKTAR"] = {"Hektar Trading License", "ARC_TRADE_LICENSE_HEKTAR"}
+licenseList["SECTOR_REPUBLIC_HEKTAR"] = {"Hektar Trading License", "ARC_TRADE_LICENSE_HEKTAR"}
+licenseList["SECRET_HEKTAR"] = {"Hektar Trading License", "ARC_TRADE_LICENSE_HEKTAR"}
+
+licenseList["SECTOR_LANIUS_UNIQUE"] = {"Lanius Trading License", "ARC_TRADE_LICENSE_LAN"}
+licenseList["SECTOR_AUGMENTED_UNIQUE"] = {"Lanius Trading License", "ARC_TRADE_LICENSE_LAN"}
+
+licenseList["SECTOR_REBEL"] = {"Rebel Trading License", "ARC_TRADE_LICENSE_REBEL"}
+licenseList["SECTOR_REBEL_UNIQUE"] = {"Rebel Trading License", "ARC_TRADE_LICENSE_REBEL"}
+licenseList["SECTOR_AUTO"] = {"Rebel Trading License", "ARC_TRADE_LICENSE_REBEL"}
+licenseList["SECTOR_AUTO_UNIQUE"] = {"Rebel Trading License", "ARC_TRADE_LICENSE_REBEL"}
+licenseList["SECRET_JERRY"] = {"Rebel Trading License", "ARC_TRADE_LICENSE_REBEL"}
+licenseList["SECRET_ESTATE"] = {"Rebel Trading License", "ARC_TRADE_LICENSE_REBEL"}
+
+licenseList["SECTOR_HIVE"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_HIVE_UNIQUE"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_THEOCRACY"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_THEOCRACY_UNIQUE"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_COALITION"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_COALITION_UNIQUE"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_KLEPTOCRACY"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_KLEPTOCRACY_UNIQUE"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECRET_NIGHTS"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_REPUBLIC"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+licenseList["SECTOR_REPUBLIC_UNIQUE"] = {"Coalition Trading License", "ARC_TRADE_LICENSE_COAL"}
+
+licenseList["SECTOR_CLAN_UNIQUE"] = {"Guild Trading License", "ARC_TRADE_LICENSE_GUILD"}
+
+licenseList["SECTOR_GENIOCRACY"] = {"Geniocracy Trading License", "ARC_TRADE_LICENSE_SHELL"}
+licenseList["SECTOR_GENIOCRACY_UNIQUE"] = {"Geniocracy Trading License", "ARC_TRADE_LICENSE_SHELL"}
+
+licenseList["SECTOR_VAGABOND_UNIQUE"] = {"Spectral Trading License", "ARC_TRADE_LICENSE_GHOST"}
+licenseList["SECTOR_DYNASTY"] = {"Spectral Trading License", "ARC_TRADE_LICENSE_GHOST"}
+licenseList["SECTOR_DYNASTY_UNIQUE"] = {"Spectral Trading License", "ARC_TRADE_LICENSE_GHOST"}
+
+local function hasEquipmentCargo(name)
+    for item in vter(Hyperspace.App.gui.equipScreen:GetCargoHold()) do
+    	if item == name then
+    		return true
+    	end
+    end
+    return false
+end
+
+local function hasLicense(name)
+	--[[if licenseList[name] then
+		print("NAME:"..name.." HAS EQUIPMENT:"..tostring(Hyperspace.ships.player:HasEquipment(licenseList[name][2]) > 0).." HAS CARGO:"..tostring(hasEquipmentCargo(licenseList[name][2])))
+	else
+		print("NO LICENSE NEEDED:"..name)
+	end]]
+	return (not licenseList[name]) or (licenseList[name] and (Hyperspace.ships.player:HasEquipment(licenseList[name][2]) > 0 or hasEquipmentCargo(licenseList[name][2]))) or (Hyperspace.ships.player:HasEquipment("ARC_TRADE_LICENSE_ALL") > 0 or hasEquipmentCargo("ARC_TRADE_LICENSE_ALL"))
+end
 
 
 --Player Data
@@ -598,7 +846,7 @@ local function generateDeliveries()
 			elseif type == 2 then
 				destination = -1
 				item = math.random(1, #cargoList)
-				amount = math.ceil((value * 0.66) / cargoList[item].average )
+				amount = math.ceil((value * 0.5) / cargoList[item].average )
 			end
 
 			table.insert(deliveries, {type = type, dest = destination, value = value, amount = amount, item = item})
@@ -616,6 +864,7 @@ local function generateSector()
 	local beaconCount = map.locations:size()
 	if beaconCount <= 1 then return end
 	local existingBeacons = {}
+	local globalRate = 60 + math.random(2, math.floor(20 + map.worldLevel * 1.5)) + 3 * map.worldLevel
 	for i = 1, planetNumber, 1 do
 		local beaconNumber = math.random(0, beaconCount - 1)
 		local count = 0
@@ -649,7 +898,7 @@ local function generateSector()
 		local event = math.random(1, #eventList)
 		local tariff = math.random() * (0.05 + 0.02)
 		if event == 5 then tariff = tariff + 0.1 end
-		local rate = 70 + math.random(2, math.floor(20 + map.worldLevel * 1.5)) - 7 * map.worldLevel
+		local rate = globalRate + math.random(-2, 2)
 		
 		table.insert(planetTableList, {beacon = beaconNumber, planet = planet, name = name, type = type, event = event, inventory = generateInventory(type, event, map.worldLevel), tariff = tariff, exchangeRate = rate, deliveries = {}})
 	end
@@ -675,7 +924,7 @@ local function giveRandomReward(multiplyer)
     if rewardPrice < 2000 then
     	local creditReward = math.random(100, 2200 - rewardPrice + 200 * map.worldLevel)
     	if cargoLeft > 0 then
-    		print("You found "..math.floor(rewardAmount).."tons of "..cargoList[rewardItem].name.." and "..math.floor(creditReward).."c")
+    		print("You found "..math.floor(rewardAmount).." tonnes of "..cargoList[rewardItem].name.." and "..math.floor(creditReward).."c")
     		playerInventory[rewardItem].number = playerInventory[rewardItem].number + rewardAmount
     		playerCredits = playerCredits + creditReward
     	else
@@ -683,7 +932,7 @@ local function giveRandomReward(multiplyer)
     		playerCredits = playerCredits + creditReward * 2
     	end
     else
-		print("You found "..math.floor(rewardAmount).."tons of "..cargoList[rewardItem].name)
+		print("You found "..math.floor(rewardAmount).." tonnes of "..cargoList[rewardItem].name)
 		playerInventory[rewardItem].number = playerInventory[rewardItem].number + rewardAmount
     end
     calculateCargo()
@@ -692,7 +941,7 @@ end
 
 --Run on game load
 script.on_init(function()
-	inMenu = false
+	--inMenu = false
 	loadPlayerInventory()
 	loadPlanets()
 	calculateAverage()
@@ -784,7 +1033,7 @@ end)]]
 ]]
 local hoveredButton = 0
 
-local inMenu = false
+--local inMenu = false
 local tab = 1
 
 --Scroll Variables
@@ -1047,6 +1296,12 @@ local function renderItemTab(xOffset, item, inventory, currPlanetInventory, vari
 		Graphics.CSurface.GL_RenderPrimitive(sidebarBot3)
 	end
 
+	if cInfoTab.image then
+		Graphics.CSurface.GL_RenderPrimitive(cInfoTab.image)
+	else
+		Graphics.CSurface.GL_RenderPrimitive(itemNoImage)
+	end
+
 	--print("1")
 
 	Graphics.freetype.easy_printCenter(14, 797, 218, cargoList[item].name)
@@ -1240,9 +1495,9 @@ local function renderItemTab(xOffset, item, inventory, currPlanetInventory, vari
 	        end
 	    elseif varient == 2 and buyAmt > 0 then
 	        if hoveredButton == 27 then 
-	        	Graphics.CSurface.GL_RenderPrimitive(buyButtonSelect)
+	        	Graphics.CSurface.GL_RenderPrimitive(buyButton.delect)
 	        else
-	        	Graphics.CSurface.GL_RenderPrimitive(buyButton)
+	        	Graphics.CSurface.GL_RenderPrimitive(buyButton.on)
 	        end
 	    elseif buyAmt > 0 then
 	    	if hoveredButton == 27 then 
@@ -1269,75 +1524,63 @@ local function renderMenuBack(mousePos)
 	Graphics.CSurface.GL_RenderPrimitive(backImage)
     if tab == 1 then
 		Graphics.CSurface.GL_RenderPrimitive(tab1Image)
-        if mousePos.x > 433 and mousePos.x < 513 and mousePos.y > 88 and mousePos.y < 125 then
+        if mousePos.y > 217 and mousePos.y < 297 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 3
 			Graphics.CSurface.GL_RenderPrimitive(tab2ImageSelect)
-        elseif mousePos.x > 514 and mousePos.x < 594 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 298 and mousePos.y < 378 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 4
 			Graphics.CSurface.GL_RenderPrimitive(tab3ImageSelect)
-        elseif mousePos.x > 595 and mousePos.x < 675 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 379 and mousePos.y < 459 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 5
 			Graphics.CSurface.GL_RenderPrimitive(tab4ImageSelect)
-		elseif mousePos.x > 676 and mousePos.x < 756 and mousePos.y > 88 and mousePos.y < 125 then
-        	hoveredButton = 6
-			Graphics.CSurface.GL_RenderPrimitive(tab5ImageSelect)
         end
 	elseif tab == 2 then
 		Graphics.CSurface.GL_RenderPrimitive(tab2Image)
-        if mousePos.x > 352 and mousePos.x < 432 and mousePos.y > 88 and mousePos.y < 125 then
+        if mousePos.y > 136 and mousePos.y < 216 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 2
 			Graphics.CSurface.GL_RenderPrimitive(tab1ImageSelect)
-        elseif mousePos.x > 514 and mousePos.x < 594 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 298 and mousePos.y < 378 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 4
 			Graphics.CSurface.GL_RenderPrimitive(tab3ImageSelect)
-        elseif mousePos.x > 595 and mousePos.x < 675 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 379 and mousePos.y < 459 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 5
 			Graphics.CSurface.GL_RenderPrimitive(tab4ImageSelect)
-		elseif mousePos.x > 676 and mousePos.x < 756 and mousePos.y > 88 and mousePos.y < 125 then
-        	hoveredButton = 6
-			Graphics.CSurface.GL_RenderPrimitive(tab5ImageSelect)
         end
 	elseif tab == 3 then
 		Graphics.CSurface.GL_RenderPrimitive(tab3Image)
-        if mousePos.x > 352 and mousePos.x < 432 and mousePos.y > 88 and mousePos.y < 125 then
+        if mousePos.y > 136 and mousePos.y < 216 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 2
 			Graphics.CSurface.GL_RenderPrimitive(tab1ImageSelect)
-        elseif mousePos.x > 433 and mousePos.x < 513 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 217 and mousePos.y < 297 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 3
 			Graphics.CSurface.GL_RenderPrimitive(tab2ImageSelect)
-        elseif mousePos.x > 595 and mousePos.x < 675 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 379 and mousePos.y < 459 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 5
 			Graphics.CSurface.GL_RenderPrimitive(tab4ImageSelect)
-		elseif mousePos.x > 676 and mousePos.x < 756 and mousePos.y > 88 and mousePos.y < 125 then
-        	hoveredButton = 6
-			Graphics.CSurface.GL_RenderPrimitive(tab5ImageSelect)
         end
     elseif tab == 4 then
 		Graphics.CSurface.GL_RenderPrimitive(tab4Image)
-        if mousePos.x > 352 and mousePos.x < 432 and mousePos.y > 88 and mousePos.y < 125 then
+        if mousePos.y > 136 and mousePos.y < 216 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 2
 			Graphics.CSurface.GL_RenderPrimitive(tab1ImageSelect)
-        elseif mousePos.x > 433 and mousePos.x < 513 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 217 and mousePos.y < 297 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 3
 			Graphics.CSurface.GL_RenderPrimitive(tab2ImageSelect)
-        elseif mousePos.x > 514 and mousePos.x < 594 and mousePos.y > 88 and mousePos.y < 125 then
+        elseif mousePos.y > 298 and mousePos.y < 378 and mousePos.x > 294 and mousePos.x < 331 then
         	hoveredButton = 4
 			Graphics.CSurface.GL_RenderPrimitive(tab3ImageSelect)
-		elseif mousePos.x > 676 and mousePos.x < 756 and mousePos.y > 88 and mousePos.y < 125 then
-        	hoveredButton = 6
-			Graphics.CSurface.GL_RenderPrimitive(tab5ImageSelect)
         end
 	end
 end
 
 local function renderTab1(mousePos)
 	Graphics.CSurface.GL_RenderPrimitive(sidebarTop)
-    Graphics.freetype.easy_printCenter(62, 797, 148, "CARGO HOLD")
-    Graphics.freetype.easy_printCenter(10, 797, 170, "Credits:"..math.floor(playerCredits))
-    Graphics.freetype.easy_printCenter(10, 797, 186, math.floor(playerCargo).."/"..math.floor(playerCargoSpace).." Cargo Space")
-    renderItemList(0, playerInventory, nil, 1, selectedItem, false, mousePos, true)
+    Graphics.freetype.easy_printCenter(62, 787, 148, "CARGO HOLD")
+    Graphics.freetype.easy_printCenter(10, 787, 170, "Credits:"..math.floor(playerCredits))
+    Graphics.freetype.easy_printCenter(10, 787, 186, math.floor(playerCargo).."/"..math.floor(playerCargoSpace).." Cargo Space")
+    renderItemList(-10, playerInventory, nil, 1, selectedItem, false, mousePos, true)
     if selectedItem >= 0 then
-    	renderItemTab(0, selectedItem, playerInventory, nil, 1, mousePos)
+    	renderItemTab(-10, selectedItem, playerInventory, nil, 1, mousePos)
     end
 end
 
@@ -1350,7 +1593,7 @@ local function renderTab2(mousePos)
 
 
 	Graphics.CSurface.GL_PushMatrix()
-	local xOffset = (635 / planetZoom)
+	local xOffset = (625 / planetZoom)
 	local yOffset = (338 / planetZoom)
 	local anglePlanet = 0
 	if selectPlanet > -1 then
@@ -1362,7 +1605,7 @@ local function renderTab2(mousePos)
 		yOffset = yOffset - math.sin(math.rad(anglePlanet)) * 140 * (planetZoom - 1)
 		planetZoom = math.min(2, planetZoom + Hyperspace.FPS.SpeedFactor/12)
 	elseif selectPlanet < 0 and planetZoom > 1 then
-		 anglePlanet = 270 + ((oldSelectPlanet - 1) * (360 / #planetTableList)) * tab2Spin/100 
+		anglePlanet = 270 + ((oldSelectPlanet - 1) * (360 / #planetTableList)) * tab2Spin/100 
 		while anglePlanet > 360 do
 			anglePlanet = anglePlanet - 360
 		end
@@ -1385,14 +1628,14 @@ local function renderTab2(mousePos)
     			end
 	    		--print("I:"..tostring(i).." COUNT:"..tostring(count).." ANGLE:"..tostring(angle).." X:"..tostring(math.cos(angle)).." Y:"..tostring(math.sin(angle)))
 	    		Graphics.CSurface.GL_PushMatrix()
-	    		local xOffset = (635 / planetZoom) + math.cos(math.rad(angle)) * 140
+	    		local xOffset = (625 / planetZoom) + math.cos(math.rad(angle)) * 140
 	    		local yOffset = (338 / planetZoom) + math.sin(math.rad(angle)) * 140
 	    		local renderTag = false
 	    		if selectPlanet > -1 or (selectPlanet < 0 and planetZoom > 1) then
 					xOffset = xOffset - (164 * (planetZoom - 1) / planetZoom) - math.cos(math.rad(anglePlanet)) * 140 * (planetZoom - 1)
 					yOffset = yOffset - math.sin(math.rad(anglePlanet)) * 140 * (planetZoom - 1)
 	    		else
-		        	local pPoint = Hyperspace.Pointf(635 + math.cos(math.rad(angle)) * 140, 338 + math.sin(math.rad(angle)) * 140)
+		        	local pPoint = Hyperspace.Pointf(625 + math.cos(math.rad(angle)) * 140, 338 + math.sin(math.rad(angle)) * 140)
 		        	if get_distance(mousePos, pPoint) < 45 then 
 						hoverPlanet = i
 					end
@@ -1443,7 +1686,7 @@ local function renderTab2(mousePos)
     if planetZoom > 1 then
     	if planetZoom < 2 then
     		Graphics.CSurface.GL_RenderPrimitive(backButtonTab2Off)
-    	elseif mousePos.x > 355-1 and mousePos.x < 355+65 and mousePos.y > 142-1 and mousePos.y < 142+25 then
+    	elseif mousePos.x > 345-1 and mousePos.x < 345+65 and mousePos.y > 142-1 and mousePos.y < 142+25 then
     		hoveredButton = 30
     		Graphics.CSurface.GL_RenderPrimitive(backButtonTab2Select)
     	else
@@ -1465,7 +1708,7 @@ local function renderTab2(mousePos)
 		end
 		--print("I:"..tostring(i).." COUNT:"..tostring(count).." ANGLE:"..tostring(angle).." X:"..tostring(math.cos(angle)).." Y:"..tostring(math.sin(angle)))
 		Graphics.CSurface.GL_PushMatrix()
-		local xOffset = (635 / planetZoom) + math.cos(math.rad(angle)) * 140 - (164 * (planetZoom - 1) / planetZoom) - math.cos(math.rad(anglePlanet)) * 140 * (planetZoom - 1)
+		local xOffset = (625 / planetZoom) + math.cos(math.rad(angle)) * 140 - (164 * (planetZoom - 1) / planetZoom) - math.cos(math.rad(anglePlanet)) * 140 * (planetZoom - 1)
 		local yOffset = (338 / planetZoom) + math.sin(math.rad(angle)) * 140 - math.sin(math.rad(anglePlanet)) * 140 * (planetZoom - 1)
 
 		Graphics.CSurface.GL_Scale(planetZoom, planetZoom, 0)
@@ -1484,24 +1727,24 @@ local function renderTab2(mousePos)
 		local targetPlanet = selectPlanet
     	if selectPlanet < 0 and planetZoom > 1 then targetPlanet = oldSelectPlanet end
     	local planetTable = planetTableList[targetPlanet]
-    	Graphics.freetype.easy_printCenter(62, 470, 184, planetNameList[planetTable.name])
-    	Graphics.freetype.easy_printCenter(10, 470, 208, "Industry: "..industryList[planetTable.type])
-    	Graphics.freetype.easy_printCenter(10, 470, 226, "Condition: "..eventList[planetTable.event])
-    	Graphics.freetype.easy_printCenter(10, 470, 436, "Tariff: "..math.floor(planetTable.tariff * 100).."%")
-    	Graphics.freetype.easy_printCenter(10, 470, 454, "Exchange Rate: "..math.floor(planetTable.exchangeRate).."c per ~")
-    	Graphics.freetype.easy_printCenter(10, 470, 472, "Missions Available: "..math.floor(#planetTable.deliveries))
+    	Graphics.freetype.easy_printCenter(62, 460, 184, planetNameList[planetTable.name])
+    	Graphics.freetype.easy_printCenter(10, 460, 208, "Industry: "..industryList[planetTable.type])
+    	Graphics.freetype.easy_printCenter(10, 460, 226, "Condition: "..eventList[planetTable.event])
+    	Graphics.freetype.easy_printCenter(10, 460, 436, "Tariff: "..math.floor(planetTable.tariff * 100).."%")
+    	Graphics.freetype.easy_printCenter(10, 460, 454, "Exchange Rate: "..math.floor(planetTable.exchangeRate).."c per ~")
+    	Graphics.freetype.easy_printCenter(10, 460, 472, "Missions Available: "..math.floor(#planetTable.deliveries))
 
     	Graphics.CSurface.GL_RenderPrimitive(arrowLOn)
     	Graphics.CSurface.GL_RenderPrimitive(arrowROn)
-    	if mousePos.x > 361 and mousePos.x < 379 and mousePos.y > 329 and mousePos.y < 346 then
+    	if mousePos.x > 351 and mousePos.x < 369 and mousePos.y > 329 and mousePos.y < 346 then
 			hoveredButton = 31
     		Graphics.CSurface.GL_RenderPrimitive(arrowLSelect)
-    	elseif mousePos.x > 562 and mousePos.x < 580 and mousePos.y > 329 and mousePos.y < 346 then
+    	elseif mousePos.x > 552 and mousePos.x < 570 and mousePos.y > 329 and mousePos.y < 346 then
 			hoveredButton = 32
     		Graphics.CSurface.GL_RenderPrimitive(arrowRSelect)
     	end
 
-    	renderItemList(241, planetTableList[selectPlanet].inventory, planetTableList[selectPlanet].inventory, 2, -1, true, mousePos, false)
+    	renderItemList(231, planetTableList[selectPlanet].inventory, planetTableList[selectPlanet].inventory, 2, -1, true, mousePos, false)
     end
     if tab2Spin <= 75 then
     	tab2Spin = math.min(100, tab2Spin + 5 * Hyperspace.FPS.SpeedFactor/16 + tab2Spin * Hyperspace.FPS.SpeedFactor/8)
@@ -1512,9 +1755,9 @@ end
 
 local function renderTab3(mousePos)
 	if currentPlanet < 0 then
-	    Graphics.freetype.easy_printCenter(64, 635, 292, "NO TRADING\nAVAILABLE HERE")
+	    Graphics.freetype.easy_printCenter(64, 625, 292, "NO TRADING\nAVAILABLE HERE")
 	else
-		local addX = 241
+		local addX = 231
 		local removeX = 324
 		local planetTable = planetTableList[currentPlanet]
 		Graphics.CSurface.GL_PushMatrix()
@@ -1522,8 +1765,8 @@ local function renderTab3(mousePos)
 		Graphics.CSurface.GL_RenderPrimitive(sidebarTop)
 		Graphics.CSurface.GL_PopMatrix()
 		if buyingFromPlanet then
-		    Graphics.freetype.easy_printCenter(62, 797 - removeX, 148, planetNameList[planetTable.name])
-		    Graphics.freetype.easy_printCenter(6, 797 - removeX, 168, "Exchange Rate: "..math.floor(planetTable.exchangeRate).."c per ~")
+		    Graphics.freetype.easy_printCenter(62, 787 - removeX, 148, planetNameList[planetTable.name])
+		    Graphics.freetype.easy_printCenter(6, 787 - removeX, 168, "Exchange Rate: "..math.floor(planetTable.exchangeRate).."c per ~")
 		    local tooExpensive1 = false
 		    local tooExpensive2 = false
 		    if Hyperspace.ships.player.currentScrap < exchangeMult then
@@ -1533,13 +1776,13 @@ local function renderTab3(mousePos)
     			tooExpensive2 = true
     		end
 		    if mousePos.y > 183 and mousePos.y < 202 then
-		    	if mousePos.x > 721 - removeX and mousePos.x < 796 - removeX and not tooExpensive1 then
+		    	if mousePos.x > 711 - removeX and mousePos.x < 786 - removeX and not tooExpensive1 then
 		    		hoveredButton = 40
-		    	elseif mousePos.x > 798 - removeX and mousePos.x < 873 - removeX and not tooExpensive2 then
+		    	elseif mousePos.x > 788 - removeX and mousePos.x < 863 - removeX and not tooExpensive2 then
 		    		hoveredButton = 41
 		    	end
 		    end
-		    if mousePos.x > 687 - removeX and mousePos.x < 713 - removeX then
+		    if mousePos.x > 677 - removeX and mousePos.x < 703 - removeX then
 		    	if mousePos.y > 168 and mousePos.y < 179 then
 		    		hoveredButton = 42
 		    	elseif mousePos.y > 179 and mousePos.y < 190 then
@@ -1549,37 +1792,37 @@ local function renderTab3(mousePos)
 		    	end
 		    end
 			Graphics.CSurface.GL_PushMatrix()
-			Graphics.CSurface.GL_Translate(688 - removeX, 169, 0)
+			Graphics.CSurface.GL_Translate(678 - removeX, 169, 0)
 			if hoveredButton == 42 then 
 				Graphics.CSurface.GL_SetColorTint(Graphics.GL_Color(58/255, 127/255, 255/255, 1))
 			end
     		Graphics.CSurface.GL_RenderPrimitive(exchangeButtonSmall)
 			Graphics.CSurface.GL_PopMatrix()
-		    Graphics.freetype.easy_printCenter(51, 700 - removeX, 169, "1x")
+		    Graphics.freetype.easy_printCenter(51, 690 - removeX, 169, "1x")
 		    Graphics.CSurface.GL_RemoveColorTint()
 
 			Graphics.CSurface.GL_PushMatrix()
-			Graphics.CSurface.GL_Translate(688 - removeX, 180, 0)
+			Graphics.CSurface.GL_Translate(678 - removeX, 180, 0)
 			if hoveredButton == 43 then 
 				Graphics.CSurface.GL_SetColorTint(Graphics.GL_Color(58/255, 127/255, 255/255, 1))
 			end
     		Graphics.CSurface.GL_RenderPrimitive(exchangeButtonSmall)
 			Graphics.CSurface.GL_PopMatrix()
-		    Graphics.freetype.easy_printCenter(51, 700 - removeX, 180, "10x")
+		    Graphics.freetype.easy_printCenter(51, 690 - removeX, 180, "10x")
 		    Graphics.CSurface.GL_RemoveColorTint()
 
 			Graphics.CSurface.GL_PushMatrix()
-			Graphics.CSurface.GL_Translate(688 - removeX, 191, 0)
+			Graphics.CSurface.GL_Translate(678 - removeX, 191, 0)
 			if hoveredButton == 44 then 
 				Graphics.CSurface.GL_SetColorTint(Graphics.GL_Color(58/255, 127/255, 255/255, 1))
 			end
     		Graphics.CSurface.GL_RenderPrimitive(exchangeButtonSmall)
 			Graphics.CSurface.GL_PopMatrix()
-		    Graphics.freetype.easy_printCenter(51, 700 - removeX, 191, "100x")
+		    Graphics.freetype.easy_printCenter(51, 690 - removeX, 191, "100x")
 		    Graphics.CSurface.GL_RemoveColorTint()
 
 			Graphics.CSurface.GL_PushMatrix()
-			Graphics.CSurface.GL_Translate(723-7 - removeX, 185, 0)
+			Graphics.CSurface.GL_Translate(713-7 - removeX, 185, 0)
 			if tooExpensive1 then
 				Graphics.CSurface.GL_SetColorTint(Graphics.GL_Color(160/255, 162/255, 171/255, 1))
 			elseif hoveredButton == 40 then 
@@ -1587,11 +1830,11 @@ local function renderTab3(mousePos)
 			end
     		Graphics.CSurface.GL_RenderPrimitive(exchangeButton)
 			Graphics.CSurface.GL_PopMatrix()
-		    Graphics.freetype.easy_printCenter(6, 759-3 - removeX, 184, math.floor(planetTable.exchangeRate * exchangeMult).."c for "..math.floor(exchangeMult).."~")
+		    Graphics.freetype.easy_printCenter(6, 749-3 - removeX, 184, math.floor(planetTable.exchangeRate * exchangeMult * 0.8).."c for "..math.floor(exchangeMult).."~")
     		Graphics.CSurface.GL_RemoveColorTint()
 
 			Graphics.CSurface.GL_PushMatrix()
-			Graphics.CSurface.GL_Translate(799 - removeX, 185, 0)
+			Graphics.CSurface.GL_Translate(789 - removeX, 185, 0)
 			if tooExpensive2 then
 				Graphics.CSurface.GL_SetColorTint(Graphics.GL_Color(160/255, 162/255, 171/255, 1))
 			elseif hoveredButton == 41 then 
@@ -1599,12 +1842,12 @@ local function renderTab3(mousePos)
 			end
     		Graphics.CSurface.GL_RenderPrimitive(exchangeButton)
 			Graphics.CSurface.GL_PopMatrix()
-		    Graphics.freetype.easy_printCenter(6, 835+4 - removeX, 184, math.floor(exchangeMult).."~ for "..math.floor(planetTable.exchangeRate * exchangeMult).."c")
+		    Graphics.freetype.easy_printCenter(6, 825+4 - removeX, 184, math.floor(exchangeMult).."~ for "..math.floor(planetTable.exchangeRate * exchangeMult).."c")
 		    Graphics.CSurface.GL_RemoveColorTint()
 		else
-		    Graphics.freetype.easy_printCenter(62, 797 - removeX, 148, "YOUR CARGO")
-		    Graphics.freetype.easy_printCenter(10, 797 - removeX, 170, "Credits:"..math.floor(playerCredits))
-		    Graphics.freetype.easy_printCenter(10, 797 - removeX, 186, math.floor(playerCargo).."/"..math.floor(playerCargoSpace).." Cargo Space")
+		    Graphics.freetype.easy_printCenter(62, 787 - removeX, 148, "YOUR CARGO")
+		    Graphics.freetype.easy_printCenter(10, 787 - removeX, 170, "Credits:"..math.floor(playerCredits))
+		    Graphics.freetype.easy_printCenter(10, 787 - removeX, 186, math.floor(playerCargo).."/"..math.floor(playerCargoSpace).." Cargo Space")
 		end
 		if buyingFromPlanet then
 			--renderItemList(addX, playerInventory, nil, 1, -1, false, mousePos, false)
@@ -1613,19 +1856,42 @@ local function renderTab3(mousePos)
 			renderItemList(addX, playerInventory, planetTableList[currentPlanet].inventory, 2, selectedBuyItem, true, mousePos, true)
 		end
 		if selectedBuyItem >= 0 and buyingFromPlanet and planetTableList[currentPlanet] then
-			renderItemTab(-1 * removeX, selectedBuyItem, planetTableList[currentPlanet].inventory, planetTableList[currentPlanet].inventory, 2, mousePos)
+			renderItemTab(-1 * removeX - 10, selectedBuyItem, planetTableList[currentPlanet].inventory, planetTableList[currentPlanet].inventory, 2, mousePos)
 		elseif selectedBuyItem >= 0 and planetTableList[currentPlanet] then
-			renderItemTab(-1 * removeX, selectedBuyItem, playerInventory, planetTableList[currentPlanet].inventory, 3, mousePos)
+			renderItemTab(-1 * removeX - 10, selectedBuyItem, playerInventory, planetTableList[currentPlanet].inventory, 3, mousePos)
 		end
 
 	end
 end
 
+local function renderTab3License(mousePos, sectorId, xOffset)
+    Graphics.freetype.easy_printCenter(14, 625+xOffset, 252, string.format("Purchase a\n%s\nto trade here", licenseList[sectorId][1]))
+    local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(licenseList[sectorId][2])
+    local cost = blueprint.desc.cost
+    Graphics.freetype.easy_printCenter(10, 625+xOffset, 356, string.format("Cost:%i~", cost))
+    if mousePos.x > 743-172-1+xOffset and mousePos.x < 743-172+110+xOffset and mousePos.y > 511-140-1 and mousePos.y < 511-140+21 and Hyperspace.ships.player.currentScrap >= cost then
+    	hoveredButton = 60
+    end
+
+	Graphics.CSurface.GL_PushMatrix()
+    Graphics.CSurface.GL_Translate(-172+xOffset, -140, 0)
+    if hoveredButton == 60 then 
+    	Graphics.CSurface.GL_RenderPrimitive(buyButton.select)
+    elseif Hyperspace.ships.player.currentScrap < cost then
+    	Graphics.CSurface.GL_RenderPrimitive(buyButton.off)
+    else
+    	Graphics.CSurface.GL_RenderPrimitive(buyButton.on)
+    end
+    Graphics.CSurface.GL_PopMatrix()
+end
+
+
 local function renderTab4(mousePos)
 	Graphics.CSurface.GL_RenderPrimitive(backImageTab4)
-	local initialX = 556
+	local initialX = 546
 	local initialY = 142
-	if currentPlanet > -1 and #planetTableList[currentPlanet].deliveries > 0 then
+	local map = Hyperspace.App.world.starMap
+	if currentPlanet > -1 and #planetTableList[currentPlanet].deliveries > 0 and hasLicense(map.currentSector.description.type) then
 		for d, deliverTable in ipairs(planetTableList[currentPlanet].deliveries) do
 			local xOffset = initialX + ((d-1)%2) * 182
 			local yOffset = initialY + math.floor((d-1)/2) * 199
@@ -1668,6 +1934,12 @@ local function renderTab4(mousePos)
 	        end
 	        Graphics.CSurface.GL_PopMatrix()
 		end
+	elseif currentPlanet > -1 and #planetTableList[currentPlanet].deliveries > 0 then
+		renderTab3License(mousePos, map.currentSector.description.type, 100)
+		Graphics.CSurface.GL_PushMatrix()
+        Graphics.CSurface.GL_Translate(-1000, 0, 0)
+        Graphics.CSurface.GL_RenderPrimitive(buyButton.on)
+        Graphics.CSurface.GL_PopMatrix()
 	else
 		Graphics.CSurface.GL_PushMatrix()
 	    Graphics.CSurface.GL_Translate(initialX, initialY, 0)
@@ -1675,7 +1947,8 @@ local function renderTab4(mousePos)
     	Graphics.freetype.easy_printCenter(63, 180, 80, "NO\nAVAILABLE\nMISSIONS")
     	Graphics.CSurface.GL_PopMatrix()
 	end
-	local xOffset = 355
+    
+	local xOffset = 345
 	local yOffset = 202
 	local deliverTable = activeDelivery
 	if activeDelivery and activeDelivery.type then
@@ -1743,7 +2016,77 @@ local function renderTab4(mousePos)
 	Graphics.CSurface.GL_PopMatrix()
 end
 
-script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, function()
+script.on_render_event(Defines.RenderEvents.GUI_CONTAINER, function()
+	--print("BEFORE GUI") 
+	hoveredButton = 0
+    hoverItem = -1
+    hoverBuyItem = -1
+	hoverPlanet = -1
+	hoverQuest = -1
+    currentPlanet = -1
+end, function() end)
+
+--script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, function() print("BEFORE MOUSE") end, function() print("AFTER MOUSE") end)
+
+local lastTabbedWindow = nil
+script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, function(tabName)
+	if tabName == "arc_trade" and lastTabbedWindow ~= "arc_trade" then
+		tab2Spin = 1
+		buyAmt = 0
+		jettisonAmt = 0
+		calculateCargo()
+		if selectedItem == -1 then
+			for i, n in ipairs(playerInventory) do
+				if n.number > 0 then
+					selectedItem = i
+					break
+				end
+			end
+		end
+		if selectedBuyItem == -1 then
+			for i, n in ipairs(planetTableList[currentPlanet].inventory) do
+				if n.number > 0 then
+					selectedBuyItem = i
+					break
+				end
+			end
+		end
+	end
+	if tabName == "arc_trade" then
+		--print("AFTER WINDOW")
+
+		local mousePos = Hyperspace.Mouse.position
+		renderMenuBack(mousePos)
+
+	    -- Get currentPlanet
+	    local map = Hyperspace.App.world.starMap
+		local location = map.currentLoc
+		for i, pTable in ipairs(planetTableList) do
+			if pTable.beacon > -1 then
+				local location2 = map.locations[pTable.beacon]
+				if location2.loc.x == location.loc.x and location2.loc.y == location.loc.y then
+					currentPlanet = i
+					break
+				end
+			end
+		end
+
+		if tab == 4 then
+    		renderTab4(mousePos)
+	    elseif tab == 3 and hasLicense(map.currentSector.description.type) then
+    		renderTab3(mousePos)
+	    elseif tab == 3 then
+	    	renderTab3License(mousePos, map.currentSector.description.type, 0)
+	    elseif tab == 2 then
+	        renderTab2(mousePos)
+	    elseif tab == 1 then
+	        renderTab1(mousePos)
+	    end
+	end
+	lastTabbedWindow = tabName
+end)
+
+--[[script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, function()
 	hoveredButton = 0
     hoverItem = -1
     hoverBuyItem = -1
@@ -1789,10 +2132,10 @@ script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, functi
 	        renderTab1(mousePos)
 	    end
 	end
-end)
+end)]]
 
 local function openMenu()
-	inMenu = true
+	--inMenu = true
 	tab2Spin = 1
 	buyAmt = 0
 	jettisonAmt = 0
@@ -1843,7 +2186,7 @@ local function tab4Button()
 	tab = 4
 end
 local function tab5Button()
-	inMenu = false
+	--inMenu = false
 end
 
 local function scrollUpButton()
@@ -2012,6 +2355,7 @@ local function multHundredButton()
 	exchangeMult = 100
 end
 local function switchInvButton()
+	buyAmt = 0
 	buyingFromPlanet = not buyingFromPlanet
 end
 
@@ -2036,6 +2380,16 @@ local function completeQuest()
 		playerInventory[activeDelivery.item].number = playerInventory[activeDelivery.item].number - activeDelivery.amount
 	end
 	activeDelivery = nil
+	savePlayerInventory()
+	calculateCargo()
+end
+
+local function purchaseLicense()
+	local map = Hyperspace.App.world.starMap
+	local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(licenseList[map.currentSector.description.type][2])
+    local cost = blueprint.desc.cost
+    Hyperspace.ships.player:ModifyScrapCount(-1 * cost,false)
+    Hyperspace.App.gui.equipScreen:AddWeapon(blueprint, true, false)
 	savePlayerInventory()
 	calculateCargo()
 end
@@ -2076,6 +2430,8 @@ buttonFunctions[50] = {func = acceptQuest}
 buttonFunctions[51] = {func = abandonQuest}
 buttonFunctions[52] = {func = completeQuest}
 
+buttonFunctions[60] = {func = purchaseLicense}
+
 
 script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function(x,y)
 	if hoverPlanet > -1 then
@@ -2093,9 +2449,9 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 		buttonFunctions[hoveredButton].func()
 	end
 
-	if inMenu then
+	--[[if inMenu then
 		return Defines.Chain.HALT
-	end
+	end]]
 	return Defines.Chain.CONTINUE
 end)
 script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_UP, function(x,y) 
@@ -2113,7 +2469,7 @@ end)
 --Map Rendering
 script.on_render_event(Defines.RenderEvents.GUI_CONTAINER, function() end, function() 
 	local map = Hyperspace.App.world.starMap
-	if map.bOpen then
+	if map.bOpen and not map.bChoosingNewSector then
 		for i, pTable in ipairs(planetTableList) do
 			if pTable.beacon > -1 then
 				local location = map.locations[pTable.beacon]
@@ -2153,8 +2509,9 @@ script.on_internal_event(Defines.InternalEvents.CONSTRUCT_SHIP_MANAGER, function
 end)
 
 script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function()
-	inMenu = false
+	--inMenu = false
 	hasBeenHostile = false
+	everHadCrew = false
 	Hyperspace.metaVariables["arctrade_loot_room"] = -1
 	for i, planetTable in ipairs(planetTableList) do
 		for item, iTab in ipairs(planetTable.inventory) do
@@ -2165,9 +2522,11 @@ script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function()
 end)
 
 script.on_internal_event(Defines.InternalEvents.JUMP_ARRIVE, function()
-	inMenu = false
+	--inMenu = false
+	everHadCrew = false
 end)
 
+local everHadCrew = false
 script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
 	if ship.iShipId == 1 then
 		local shipManager = Hyperspace.ships.enemy
@@ -2204,20 +2563,25 @@ script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
 			    for crewmem in vter(shipManager.vCrewList) do
 			    	if crewmem.iShipId == 1 then
 			    		hasAnyECrew = true
+			    		everHadCrew = true
 			    	end
-			        if crewmem.iShipId == 1 and crewmem.iRoomId == roomId then
+			        if crewmem.iShipId == 1 and not crew and crewmem.iRoomId == roomId then
 			            hasEnemyCrew = true
 			        elseif crewmem.iShipId == 0 and crewmem.iRoomId == roomId then
 			        	hasFriendlyCrew = true
 			        end
 			    end
-			    if (hasFriendlyCrew and not hasAnyECrew) or (hasBeenHostile and not (Hyperspace.ships.enemy._targetable.hostile and hasAnyECrew)) then
+			    if (hasFriendlyCrew and not hasAnyECrew) or (hasBeenHostile and everHadCrew and not (Hyperspace.ships.enemy._targetable.hostile and hasAnyECrew) and Hyperspace.ships.enemy.hullIntegrity.first > 0) then
 			    	lootLevel = 20
 			    elseif hasFriendlyCrew and not hasEnemyCrew then
 			    	lootLevel = lootLevel + Hyperspace.FPS.SpeedFactor/16
 			    elseif not hasFriendlyCrew then
-			    	lootLevel = math.max(0, lootLevel - Hyperspace.FPS.SpeedFactor/16)
+			    	lootLevel = math.max(0, lootLevel - Hyperspace.FPS.SpeedFactor/4)
 			    end
+			end
+			if Hyperspace.ships.enemy.hullIntegrity.first <= 0 then 
+				Hyperspace.metaVariables["arctrade_loot_room"] = -1
+				return
 			end
 		    Graphics.CSurface.GL_DrawRect(location.x + 6 - 16, location.y + 12 - 16, lootLevel, 11, Graphics.GL_Color(1, 0, 0, 1))
 		    Graphics.CSurface.GL_PushMatrix()
@@ -2232,3 +2596,14 @@ script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
 		end
 	end
 end)
+
+function arc_trade_give(itemId, amount)
+	playerInventory[itemId].number = playerInventory[itemId].number + amount
+	calculateCargo()
+	savePlayerInventory()
+end
+
+function arc_trade_money(amount)
+	playerCredits = playerCredits + amount
+	savePlayerInventory()
+end

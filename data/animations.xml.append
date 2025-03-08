@@ -23,4 +23,101 @@
     <desc length="1" x="0" y="0" />
     <time>1</time>
 </anim>
+
+<animSheet name="arc_trade_license_all" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_all.png</animSheet>
+<anim name="arc_trade_license_all">
+    <sheet>arc_trade_license_all</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_civ" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_civ.png</animSheet>
+<anim name="arc_trade_license_civ">
+    <sheet>arc_trade_license_civ</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_harm" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_harm.png</animSheet>
+<anim name="arc_trade_license_harm">
+    <sheet>arc_trade_license_harm</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_zolt" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_zoltan.png</animSheet>
+<anim name="arc_trade_license_zolt">
+    <sheet>arc_trade_license_zolt</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_orc" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_orc.png</animSheet>
+<anim name="arc_trade_license_orc">
+    <sheet>arc_trade_license_orc</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_out" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_out.png</animSheet>
+<anim name="arc_trade_license_out">
+    <sheet>arc_trade_license_out</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_crys" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_crys.png</animSheet>
+<anim name="arc_trade_license_crys">
+    <sheet>arc_trade_license_crys</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_sep" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_sep.png</animSheet>
+<anim name="arc_trade_license_sep">
+    <sheet>arc_trade_license_sep</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_pirate" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_pirate.png</animSheet>
+<anim name="arc_trade_license_pirate">
+    <sheet>arc_trade_license_pirate</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_hektar" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_hektar.png</animSheet>
+<anim name="arc_trade_license_hektar">
+    <sheet>arc_trade_license_hektar</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_lan" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_lanius.png</animSheet>
+<anim name="arc_trade_license_lan">
+    <sheet>arc_trade_license_lan</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_rebel" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_rebel.png</animSheet>
+<anim name="arc_trade_license_rebel">
+    <sheet>arc_trade_license_rebel</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_coal" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_coal.png</animSheet>
+<anim name="arc_trade_license_coal">
+    <sheet>arc_trade_license_coal</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_guild" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_guild.png</animSheet>
+<anim name="arc_trade_license_guild">
+    <sheet>arc_trade_license_guild</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_shell" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_shell.png</animSheet>
+<anim name="arc_trade_license_shell">
+    <sheet>arc_trade_license_shell</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
+<animSheet name="arc_trade_license_ghost" w="48" h="32" fw="48" fh="32">arc_trading/arc_trade_license_ghost.png</animSheet>
+<anim name="arc_trade_license_ghost">
+    <sheet>arc_trade_license_ghost</sheet>
+    <desc length="1" x="0" y="0" />
+    <time>1</time>
+</anim>
 </FTL>

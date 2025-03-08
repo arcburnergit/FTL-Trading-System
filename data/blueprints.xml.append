@@ -112,4 +112,416 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_cargo_expansion4</iconReplace>
 </weaponBlueprint>
 
+
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_ALL">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [All]</title>
+	<short>License [All]</short>
+	<desc>Allows you to trade at planets belonging to all factions.</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>125</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_all</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_CIV">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Civilian]</title>
+	<short>License [Civilian]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Union
+	Militia
+	Federation
+	Free Mantis
+	Mining
+	???
+	Node 17
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>60</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_civ</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_HACKER">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [C1vi|i@n]</title>
+	<short>License [C1vi|i@n]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Union
+	Militia
+	Federation
+	Free Mantis
+	Mining
+	???
+	Node 17
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>40</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_civ</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_HARM">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Harmony]</title>
+	<short>License [Harmony]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Harmony
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_harm</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_ZOLT">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Zoltan]</title>
+	<short>License [Zoltan]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Ministry
+	Duskbringers
+	Monks
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_zolt</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_ORC">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Orchid]</title>
+	<short>License [Orchid]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Gathering
+	Confederacy
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_orc</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_OUT">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Outcast]</title>
+	<short>License [Outcast]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Outcasts
+	Lost-sun
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_out</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_CRYS">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Crystal]</title>
+	<short>License [Crystal]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Crystals
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_crys</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_SEP">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Seperatist]</title>
+	<short>License [Seperatist]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Seperatists
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>40</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_sep</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_PIRATE">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Pirate]</title>
+	<short>License [Pirate]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Pirates
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>40</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_pirate</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_HEKTAR">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Hektar]</title>
+	<short>License [Hektar]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Hektar
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_hektar</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_LAN">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Lanius]</title>
+	<short>License [Lanius]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Lanius
+	Augmented
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>40</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_lan</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_REBEL">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Rebel]</title>
+	<short>License [Rebel]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Rebels
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>80</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_rebel</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_COAL">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Coalition]</title>
+	<short>License [Coalition]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Hive Mantis
+	Rock Theocracy
+	Coalition
+	Slug Kleptocracy
+	Eargen Republic
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>80</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_coal</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_GUILD">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Guild]</title>
+	<short>License [Guild]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Hunter's Guild
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>40</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_guild</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_SHELL">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Geniocracy]</title>
+	<short>License [Geniocracy]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Shell Geniocracy
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_shell</iconReplace>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARC_TRADE_LICENSE_GHOST">
+	<type>BEAM</type>
+	<flavorType>Trading License</flavorType>
+	<tip>tip_storage</tip>
+	<title>Trading License [Spectral]</title>
+	<short>License [Spectral]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Vagabonds
+	Dynasty
+	</desc>
+	<tooltip>Storage Weapon</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<cooldown>-1</cooldown>
+	<speed>0</speed>
+	<length>0</length>
+	<rarity>0</rarity>
+	<power>0</power>
+	<cost>50</cost>
+	<image>beam_contact</image>
+	<weaponArt>invisible</weaponArt>
+    <iconReplace>arc_trade_license_ghost</iconReplace>
+</weaponBlueprint>
 </FTL>

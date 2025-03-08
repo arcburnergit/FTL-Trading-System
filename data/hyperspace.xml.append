@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FTL>
-<version>^1.15.0</version>
+<version>^1.17.1</version>
 <mod:findLike type="scripts">
   <mod-append:script>data/arc_scripts/arc_functions_tradingNEW.lua</mod-append:script>
 </mod:findLike>
 
+<customTabs enabled="true">
+    <tab name="arc_trade" windowPath="upgradeUI/Equipment/arc_trade_main" hasUndo="false"/>
+</customTabs>
 </FTL>

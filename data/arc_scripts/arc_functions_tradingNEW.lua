@@ -363,7 +363,7 @@ mods.arcTrade.planetNameList = {
 	"Mulchatna",
 	"Ibirapitá",
 	"Madalitso",
-	"Bambaruush[1]",
+	"Bambaruush",
 	"Tahay",
 	"Awohali",
 	"Su",
@@ -2469,7 +2469,7 @@ end)
 --Map Rendering
 script.on_render_event(Defines.RenderEvents.GUI_CONTAINER, function() end, function() 
 	local map = Hyperspace.App.world.starMap
-	if map.bOpen and not map.bChoosingNewSector then
+	if map.bOpen and not map.bChoosingNewSector and hasLicense(map.currentSector.description.type) then
 		for i, pTable in ipairs(planetTableList) do
 			if pTable.beacon > -1 then
 				local location = map.locations[pTable.beacon]
@@ -2571,15 +2571,15 @@ script.on_render_event(Defines.RenderEvents.SHIP, function() end, function(ship)
 			        	hasFriendlyCrew = true
 			        end
 			    end
-			    if (hasFriendlyCrew and not hasAnyECrew) or (hasBeenHostile and everHadCrew and not (Hyperspace.ships.enemy._targetable.hostile and hasAnyECrew) and Hyperspace.ships.enemy.hullIntegrity.first > 0) then
+			    if (hasFriendlyCrew and not hasAnyECrew) or (hasBeenHostile and everHadCrew and not (Hyperspace.ships.enemy._targetable.hostile and hasAnyECrew) and Hyperspace.ships.enemy.ship.hullIntegrity.first > 0) then
 			    	lootLevel = 20
-			    elseif hasFriendlyCrew and not hasEnemyCrew then
-			    	lootLevel = lootLevel + Hyperspace.FPS.SpeedFactor/16
+			    elseif hasFriendlyCrew then
+			    	lootLevel = lootLevel + Hyperspace.FPS.SpeedFactor/24
 			    elseif not hasFriendlyCrew then
-			    	lootLevel = math.max(0, lootLevel - Hyperspace.FPS.SpeedFactor/4)
+			    	lootLevel = math.max(0, lootLevel - Hyperspace.FPS.SpeedFactor/6)
 			    end
 			end
-			if Hyperspace.ships.enemy.hullIntegrity.first <= 0 then 
+			if Hyperspace.ships.enemy.ship.hullIntegrity.first <= 0 then 
 				Hyperspace.metaVariables["arctrade_loot_room"] = -1
 				return
 			end

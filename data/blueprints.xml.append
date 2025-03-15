@@ -112,9 +112,234 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_cargo_expansion4</iconReplace>
 </weaponBlueprint>
 
+<blueprintList name="ARC_TRADE_LICENSE_LIST">
+	<name>ARC_TRADE_LICENSE_ALL</name>
+	<name>ARC_TRADE_LICENSE_CIV</name>
+	<name>ARC_TRADE_LICENSE_HACKER</name>
+	<name>ARC_TRADE_LICENSE_HARM</name>
+	<name>ARC_TRADE_LICENSE_ZOLT</name>
+	<name>ARC_TRADE_LICENSE_ORC</name>
+	<name>ARC_TRADE_LICENSE_OUT</name>
+	<name>ARC_TRADE_LICENSE_CRYS</name>
+	<name>ARC_TRADE_LICENSE_SEP</name>
+	<name>ARC_TRADE_LICENSE_PIRATE</name>
+	<name>ARC_TRADE_LICENSE_HEKTAR</name>
+	<name>ARC_TRADE_LICENSE_LAN</name>
+	<name>ARC_TRADE_LICENSE_REBEL</name>
+	<name>ARC_TRADE_LICENSE_COAL</name>
+	<name>ARC_TRADE_LICENSE_GUILD</name>
+	<name>ARC_TRADE_LICENSE_SHELL</name>
+	<name>ARC_TRADE_LICENSE_GHOST</name>
+</blueprintList>
 
+<augBlueprint name="ARC_TRADE_LICENSE_ALL">
+	<title>Trading License [All]</title>
+	<short>License [All]</short>
+	<desc>Allows you to trade at planets belonging to all factions.</desc>
+	<cost>125</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_ALL">
+<augBlueprint name="ARC_TRADE_LICENSE_CIV">
+	<title>Trading License [Civilian]</title>
+	<short>License [Civilian]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Union
+	Militia
+	Federation
+	Free Mantis
+	Mining
+	???
+	Node 17
+	</desc>
+	<cost>60</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_HACKER">
+	<title>Trading License [C1vi|i@n]</title>
+	<short>License [C1vi|i@n]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Union
+	Militia
+	Federation
+	Free Mantis
+	Mining
+	???
+	Node 17
+	</desc>
+	<cost>40</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_HARM">
+	<title>Trading License [Harmony]</title>
+	<short>License [Harmony]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Harmony
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_ZOLT">
+	<title>Trading License [Zoltan]</title>
+	<short>License [Zoltan]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Ministry
+	Duskbringers
+	Monks
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_ORC">
+	<title>Trading License [Orchid]</title>
+	<short>License [Orchid]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Gathering
+	Confederacy
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_OUT">
+	<title>Trading License [Outcast]</title>
+	<short>License [Outcast]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Outcasts
+	Lost-sun
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_CRYS">
+	<title>Trading License [Crystal]</title>
+	<short>License [Crystal]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Crystals
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_SEP">
+	<title>Trading License [Seperatist]</title>
+	<short>License [Seperatist]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Seperatists
+	</desc>
+	<cost>40</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_PIRATE">
+	<title>Trading License [Pirate]</title>
+	<short>License [Pirate]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Pirates
+	</desc>
+	<cost>40</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_HEKTAR">
+	<title>Trading License [Hektar]</title>
+	<short>License [Hektar]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Hektar
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_LAN">
+	<title>Trading License [Lanius]</title>
+	<short>License [Lanius]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Lanius
+	Augmented
+	</desc>
+	<cost>40</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_REBEL">
+	<title>Trading License [Rebel]</title>
+	<short>License [Rebel]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Rebels
+	</desc>
+	<cost>80</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_COAL">
+	<title>Trading License [Coalition]</title>
+	<short>License [Coalition]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Hive Mantis
+	Rock Theocracy
+	Coalition
+	Slug Kleptocracy
+	Eargen Republic
+	</desc>
+	<cost>80</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_GUILD">
+	<title>Trading License [Guild]</title>
+	<short>License [Guild]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Hunter's Guild
+	</desc>
+	<cost>40</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_SHELL">
+	<title>Trading License [Geniocracy]</title>
+	<short>License [Geniocracy]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Shell Geniocracy
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<augBlueprint name="ARC_TRADE_LICENSE_GHOST">
+	<title>Trading License [Spectral]</title>
+	<short>License [Spectral]</short>
+	<desc>Allows you to trade at planets belonging to the following factions/locations;
+	Vagabonds
+	Dynasty
+	</desc>
+	<cost>50</cost>
+    <bp>8</bp>
+    <rarity>5</rarity>
+</augBlueprint>
+
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_ALL">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -135,7 +360,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_all</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_CIV">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_CIV">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -164,7 +389,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_civ</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_HACKER">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_HACKER">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -193,7 +418,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_civ</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_HARM">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_HARM">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -216,7 +441,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_harm</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_ZOLT">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_ZOLT">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -241,7 +466,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_zolt</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_ORC">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_ORC">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -265,7 +490,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_orc</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_OUT">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_OUT">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -289,7 +514,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_out</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_CRYS">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_CRYS">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -312,7 +537,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_crys</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_SEP">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_SEP">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -335,7 +560,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_sep</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_PIRATE">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_PIRATE">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -358,7 +583,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_pirate</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_HEKTAR">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_HEKTAR">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -381,7 +606,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_hektar</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_LAN">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_LAN">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -405,7 +630,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_lan</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_REBEL">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_REBEL">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -428,7 +653,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_rebel</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_COAL">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_COAL">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -455,7 +680,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_coal</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_GUILD">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_GUILD">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -478,7 +703,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_guild</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_SHELL">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_SHELL">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>
@@ -501,7 +726,7 @@ Stacks with other cargo expansions.</desc>
     <iconReplace>arc_trade_license_shell</iconReplace>
 </weaponBlueprint>
 
-<weaponBlueprint name="ARC_TRADE_LICENSE_GHOST">
+<weaponBlueprint name="ARC_PREV_TRADE_LICENSE_GHOST">
 	<type>BEAM</type>
 	<flavorType>Trading License</flavorType>
 	<tip>tip_storage</tip>

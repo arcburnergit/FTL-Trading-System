@@ -573,7 +573,7 @@ local function hasLicense(name)
 	else
 		print("NO LICENSE NEEDED:"..name)
 	end]]
-	return (not licenseList[name]) or (licenseList[name] and (Hyperspace.ships.player:HasEquipment(licenseList[name][2]) > 0 or hasEquipmentCargo(licenseList[name][2]))) or (Hyperspace.ships.player:HasEquipment("ARC_TRADE_LICENSE_ALL") > 0 or hasEquipmentCargo("ARC_TRADE_LICENSE_ALL"))
+	return (not licenseList[name]) or (licenseList[name] and Hyperspace.ships.player:HasAugmentation(licenseList[name][2]) > 0) or (Hyperspace.ships.player:HasAugmentation("ARC_TRADE_LICENSE_ALL") > 0)
 end
 
 
@@ -941,7 +941,7 @@ end
 
 --Run on game load
 script.on_init(function()
-	--inMenu = false
+	--nMenu = false
 	loadPlayerInventory()
 	loadPlanets()
 	calculateAverage()
@@ -1033,7 +1033,7 @@ end)]]
 ]]
 local hoveredButton = 0
 
---local inMenu = false
+local inMenu = false
 local tab = 1
 
 --Scroll Variables
@@ -1866,7 +1866,7 @@ end
 
 local function renderTab3License(mousePos, sectorId, xOffset)
     Graphics.freetype.easy_printCenter(14, 625+xOffset, 252, string.format("Purchase a\n%s\nto trade here", licenseList[sectorId][1]))
-    local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(licenseList[sectorId][2])
+    local blueprint = Hyperspace.Blueprints:GetAugmentBlueprint(licenseList[sectorId][2])
     local cost = blueprint.desc.cost
     Graphics.freetype.easy_printCenter(10, 625+xOffset, 356, string.format("Cost:%i~", cost))
     if mousePos.x > 743-172-1+xOffset and mousePos.x < 743-172+110+xOffset and mousePos.y > 511-140-1 and mousePos.y < 511-140+21 and Hyperspace.ships.player.currentScrap >= cost then
@@ -2029,7 +2029,9 @@ end, function() end)
 --script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, function() print("BEFORE MOUSE") end, function() print("AFTER MOUSE") end)
 
 local lastTabbedWindow = nil
-script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, function(tabName)
+script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() 
+	inMenu = true
+end, function(tabName)
 	if tabName == "arc_trade" and lastTabbedWindow ~= "arc_trade" then
 		tab2Spin = 1
 		buyAmt = 0
@@ -2086,56 +2088,9 @@ script.on_render_event(Defines.RenderEvents.TABBED_WINDOW, function() end, funct
 	lastTabbedWindow = tabName
 end)
 
---[[script.on_render_event(Defines.RenderEvents.SPACE_STATUS, function() end, function()
-	hoveredButton = 0
-    hoverItem = -1
-    hoverBuyItem = -1
-	hoverPlanet = -1
-	hoverQuest = -1
-    currentPlanet = -1
-
-    --Open Trade Button
-    local commandGui = Hyperspace.Global.GetInstance():GetCApp().gui
-	local mousePos = Hyperspace.Mouse.position
-	if (Hyperspace.ships.enemy and Hyperspace.ships.enemy._targetable.hostile) or inMenu or commandGui.menu_pause or commandGui.event_pause then
-		Graphics.CSurface.GL_RenderPrimitive(menuButtonOff)
-	elseif mousePos.x > 1207 + 7 and mousePos.x < 1207 + 45 and mousePos.y > 608 + 7 and mousePos.y < 608 + 45 then
-    	hoveredButton = 1
-		Graphics.CSurface.GL_RenderPrimitive(menuButtonSelect)
-	else
-		Graphics.CSurface.GL_RenderPrimitive(menuButtonOn)
-    end
-    if inMenu then
-	    renderMenuBack(mousePos)
-
-	    if commandGui.menu_pause then return end
-	    -- Get currentPlanet
-	    local map = Hyperspace.App.world.starMap
-		local location = map.currentLoc
-		for i, pTable in ipairs(planetTableList) do
-			if pTable.beacon > -1 then
-				local location2 = map.locations[pTable.beacon]
-				if location2.loc.x == location.loc.x and location2.loc.y == location.loc.y then
-					currentPlanet = i
-					break
-				end
-			end
-		end
-
-		if tab == 4 then
-    		renderTab4(mousePos)
-	    elseif tab == 3 then
-    		renderTab3(mousePos)
-	    elseif tab == 2 then
-	        renderTab2(mousePos)
-	    elseif tab == 1 then
-	        renderTab1(mousePos)
-	    end
-	end
-end)]]
 
 local function openMenu()
-	--inMenu = true
+	--nMenu = true
 	tab2Spin = 1
 	buyAmt = 0
 	jettisonAmt = 0
@@ -2186,7 +2141,7 @@ local function tab4Button()
 	tab = 4
 end
 local function tab5Button()
-	--inMenu = false
+	--nMenu = false
 end
 
 local function scrollUpButton()
@@ -2386,10 +2341,11 @@ end
 
 local function purchaseLicense()
 	local map = Hyperspace.App.world.starMap
-	local blueprint = Hyperspace.Blueprints:GetWeaponBlueprint(licenseList[map.currentSector.description.type][2])
+	local blueprint = Hyperspace.Blueprints:GetAugmentBlueprint(licenseList[map.currentSector.description.type][2])
     local cost = blueprint.desc.cost
     Hyperspace.ships.player:ModifyScrapCount(-1 * cost,false)
-    Hyperspace.App.gui.equipScreen:AddWeapon(blueprint, true, false)
+	Hyperspace.ships.player:AddAugmentation("HIDDEN " .. licenseList[map.currentSector.description.type][2])
+    --Hyperspace.App.gui.equipScreen:AddWeapon(blueprint, true, false)
 	savePlayerInventory()
 	calculateCargo()
 end
@@ -2449,7 +2405,7 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_DOWN, function
 		buttonFunctions[hoveredButton].func()
 	end
 
-	--[[if inMenu then
+	--[[if nMenu then
 		return Defines.Chain.HALT
 	end]]
 	return Defines.Chain.CONTINUE
@@ -2464,6 +2420,51 @@ script.on_internal_event(Defines.InternalEvents.ON_MOUSE_L_BUTTON_UP, function(x
 		scrollingDown = false
 	end
     return Defines.Chain.CONTINUE
+end)
+
+script.on_render_event(Defines.RenderEvents.FTL_BUTTON, function() end, function()
+	if activeDelivery and activeDelivery.type then
+		local deliverTable = activeDelivery
+		local type = deliverTable.type
+		local mousePos = Hyperspace.Mouse.position
+		local xOffset = 356
+		local yOffset = 32
+		Graphics.CSurface.GL_PushMatrix()
+	    Graphics.CSurface.GL_Translate(xOffset, yOffset, 0)
+	    Graphics.freetype.easy_printCenter(14, 88, 8, questList[type])
+	    if type == 1 then
+        	local destPlanet = planetTableList[deliverTable.dest]
+        	if destPlanet then
+        		Graphics.freetype.easy_printCenter(10, 88, 35, planetNameList[destPlanet.name])
+        	end
+        else
+        	if deliverTable.dest == -1 then
+        		Graphics.freetype.easy_printCenter(10, 88, 35, "Next Sector")
+        	elseif planetTableList[deliverTable.dest] then
+        		Graphics.freetype.easy_printCenter(10, 88, 35, planetNameList[planetTableList[deliverTable.dest].name])
+        	end
+        end
+		Graphics.CSurface.GL_PushMatrix()
+	    Graphics.CSurface.GL_Translate(0, -108, 0)
+        if currentPlanet > -1 and currentPlanet == deliverTable.dest and (type == 1 or playerInventory[deliverTable.item].number >= deliverTable.amount) then
+        	if mousePos.x > xOffset + 27 - 1 and mousePos.x < xOffset + 27 + 125 and mousePos.y > yOffset-108 + 160 -1 and mousePos.y < yOffset-108 + 160 + 25 and not inMenu then
+	        	hoveredButton = 52
+	        	Graphics.CSurface.GL_RenderPrimitive(completeButtonSelect)
+	        else
+	        	Graphics.CSurface.GL_RenderPrimitive(completeButton)
+	        end
+        else
+	        if mousePos.x > xOffset + 27 - 1 and mousePos.x < xOffset + 27 + 125 and mousePos.y > yOffset-108 + 160 -1 and mousePos.y < yOffset-108 + 160 + 25 and not inMenu then
+	        	hoveredButton = 51
+	        	Graphics.CSurface.GL_RenderPrimitive(abandonButtonSelect)
+	        else
+	        	Graphics.CSurface.GL_RenderPrimitive(abandonButton)
+	        end
+	    end
+	    inMenu = false
+    	Graphics.CSurface.GL_PopMatrix()
+    	Graphics.CSurface.GL_PopMatrix()
+    end
 end)
 
 --Map Rendering
@@ -2509,7 +2510,7 @@ script.on_internal_event(Defines.InternalEvents.CONSTRUCT_SHIP_MANAGER, function
 end)
 
 script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function()
-	--inMenu = false
+	--nMenu = false
 	hasBeenHostile = false
 	everHadCrew = false
 	Hyperspace.metaVariables["arctrade_loot_room"] = -1
@@ -2522,7 +2523,7 @@ script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function()
 end)
 
 script.on_internal_event(Defines.InternalEvents.JUMP_ARRIVE, function()
-	--inMenu = false
+	--nMenu = false
 	everHadCrew = false
 end)
 

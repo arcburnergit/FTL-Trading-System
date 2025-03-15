@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+<mod:findName type="event" name="STORAGE_CHECK_BUTTON">
+  <mod-append:choice hidden="true" blue="false">
+    <text>View your Trading Licenses.</text>
+    <event load="ARC_TRADE_LICENSES"/>
+  </mod-append:choice>
+</mod:findName>
+
+<event name="ARC_TRADE_LICENSES">
+  <text>Your Licenses.</text>
+  <choice hidden="true">
+    <text>Nevermind.</text>
+    <event load="STORAGE_CHECK"/>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_ALL" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_ALL"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_CIV" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_CIV"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_HACKER" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_HACKER"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_HARM" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_HARM"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_ZOLT" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_ZOLT"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_ORC" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_ORC"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_OUT" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_OUT"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_CRYS" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_CRYS"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_SEP" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_SEP"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_PIRATE" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_PIRATE"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_HEKTAR" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_HEKTAR"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_LAN" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_LAN"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_REBEL" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_REBEL"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_COAL" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_COAL"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_GUILD" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_GUILD"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_SHELL" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_SHELL"/>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_GHOST" hidden="false" blue="false">
+    <text> </text>
+    <event>
+      <text>Test</text>
+      <loadEvent>ARC_TRADE_LICENSES</loadEvent>
+      <weapon name="ARC_PREV_TRADE_LICENSE_GHOST"/>
+    </event>
+  </choice>
+
+</event>
+</FTL>

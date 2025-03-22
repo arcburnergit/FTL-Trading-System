@@ -1,12 +1,22 @@
 <FTL>
 
+
+<blueprintList name="ARC_TRADE_COMPACTORS">
+	<name>ARC_TRADE_CARGO1</name>
+	<name>ARC_TRADE_CARGO1</name>
+	<name>ARC_TRADE_CARGO1</name>
+	<name>ARC_TRADE_CARGO2</name>
+	<name>ARC_TRADE_CARGO2</name>
+	<name>ARC_TRADE_CARGO3</name>
+</blueprintList>
+
 <augBlueprint name="ARC_TRADE_CARGO1">
     <title>Cargo Compactor MK 1</title>
     <desc>Multiplies Cargo Capacity by 1.1x.
 Only the highest tier cargo compactor will apply.</desc>
     <cost>20</cost>
     <bp>8</bp>
-    <rarity>3</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 <augBlueprint name="ARC_TRADE_CARGO2">
     <title>Cargo Compactor MK 2</title>
@@ -14,7 +24,7 @@ Only the highest tier cargo compactor will apply.</desc>
 Only the highest tier cargo compactor will apply.</desc>
     <cost>50</cost>
     <bp>8</bp>
-    <rarity>4</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 <augBlueprint name="ARC_TRADE_CARGO3">
     <title>Cargo Compactor MK 3</title>
@@ -22,8 +32,21 @@ Only the highest tier cargo compactor will apply.</desc>
 Only the highest tier cargo compactor will apply.</desc>
     <cost>80</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
+
+<blueprintList name="ARC_TRADE_EXPANSIONS">
+	<name>ARC_TRADE_EXPAND1</name>
+	<name>ARC_TRADE_EXPAND1</name>
+	<name>ARC_TRADE_EXPAND1</name>
+	<name>ARC_TRADE_EXPAND1</name>
+	<name>ARC_TRADE_EXPAND2</name>
+	<name>ARC_TRADE_EXPAND2</name>
+	<name>ARC_TRADE_EXPAND2</name>
+	<name>ARC_TRADE_EXPAND3</name>
+	<name>ARC_TRADE_EXPAND3</name>
+	<name>ARC_TRADE_EXPAND4</name>
+</blueprintList>
 
 <weaponBlueprint name="ARC_TRADE_EXPAND1">
 	<type>BEAM</type>
@@ -39,7 +62,7 @@ Stacks with other cargo expansions.</desc>
 	<cooldown>-1</cooldown>
 	<speed>0</speed>
 	<length>0</length>
-	<rarity>2</rarity>
+	<rarity>0</rarity>
 	<power>0</power>
 	<cost>15</cost>
 	<image>beam_contact</image>
@@ -61,7 +84,7 @@ Stacks with other cargo expansions.</desc>
 	<cooldown>-1</cooldown>
 	<speed>0</speed>
 	<length>0</length>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<power>0</power>
 	<cost>35</cost>
 	<image>beam_contact</image>
@@ -83,13 +106,14 @@ Stacks with other cargo expansions.</desc>
 	<cooldown>-1</cooldown>
 	<speed>0</speed>
 	<length>0</length>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<power>0</power>
 	<cost>60</cost>
 	<image>beam_contact</image>
 	<weaponArt>invisible</weaponArt>
     <iconReplace>arc_trade_cargo_expansion3</iconReplace>
 </weaponBlueprint>
+
 <weaponBlueprint name="ARC_TRADE_EXPAND4">
 	<type>BEAM</type>
 	<flavorType>Cargo Expansion</flavorType>
@@ -104,7 +128,7 @@ Stacks with other cargo expansions.</desc>
 	<cooldown>-1</cooldown>
 	<speed>0</speed>
 	<length>0</length>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<power>0</power>
 	<cost>90</cost>
 	<image>beam_contact</image>
@@ -132,13 +156,33 @@ Stacks with other cargo expansions.</desc>
 	<name>ARC_TRADE_LICENSE_GHOST</name>
 </blueprintList>
 
+<blueprintList name="ARC_TRADE_LICENSE_LIST_EX">
+	<name>ARC_PREV_TRADE_LICENSE_ALL</name>
+	<name>ARC_PREV_TRADE_LICENSE_CIV</name>
+	<name>ARC_PREV_TRADE_LICENSE_HACKER</name>
+	<name>ARC_PREV_TRADE_LICENSE_HARM</name>
+	<name>ARC_PREV_TRADE_LICENSE_ZOLT</name>
+	<name>ARC_PREV_TRADE_LICENSE_ORC</name>
+	<name>ARC_PREV_TRADE_LICENSE_OUT</name>
+	<name>ARC_PREV_TRADE_LICENSE_CRYS</name>
+	<name>ARC_PREV_TRADE_LICENSE_SEP</name>
+	<name>ARC_PREV_TRADE_LICENSE_PIRATE</name>
+	<name>ARC_PREV_TRADE_LICENSE_HEKTAR</name>
+	<name>ARC_PREV_TRADE_LICENSE_LAN</name>
+	<name>ARC_PREV_TRADE_LICENSE_REBEL</name>
+	<name>ARC_PREV_TRADE_LICENSE_COAL</name>
+	<name>ARC_PREV_TRADE_LICENSE_GUILD</name>
+	<name>ARC_PREV_TRADE_LICENSE_SHELL</name>
+	<name>ARC_PREV_TRADE_LICENSE_GHOST</name>
+</blueprintList>
+
 <augBlueprint name="ARC_TRADE_LICENSE_ALL">
 	<title>Trading License [All]</title>
 	<short>License [All]</short>
 	<desc>Allows you to trade at planets belonging to all factions.</desc>
-	<cost>125</cost>
+	<cost>180</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_CIV">
@@ -155,24 +199,18 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>60</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_HACKER">
 	<title>Trading License [C1vi|i@n]</title>
 	<short>License [C1vi|i@n]</short>
 	<desc>Allows you to trade at planets belonging to the following factions/locations;
-	Union
-	Militia
-	Federation
-	Free Mantis
-	Mining
-	???
-	Node 17
+	Corrupted...
 	</desc>
 	<cost>40</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_HARM">
@@ -183,7 +221,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_ZOLT">
@@ -196,7 +234,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_ORC">
@@ -208,7 +246,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_OUT">
@@ -220,7 +258,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_CRYS">
@@ -231,7 +269,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_SEP">
@@ -242,7 +280,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>40</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_PIRATE">
@@ -253,7 +291,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>40</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_HEKTAR">
@@ -264,7 +302,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_LAN">
@@ -276,7 +314,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>40</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_REBEL">
@@ -287,7 +325,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>80</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_COAL">
@@ -302,7 +340,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>80</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_GUILD">
@@ -313,7 +351,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>40</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_SHELL">
@@ -324,7 +362,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <augBlueprint name="ARC_TRADE_LICENSE_GHOST">
@@ -336,7 +374,7 @@ Stacks with other cargo expansions.</desc>
 	</desc>
 	<cost>50</cost>
     <bp>8</bp>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 </augBlueprint>
 
 <weaponBlueprint name="ARC_PREV_TRADE_LICENSE_ALL">
@@ -354,7 +392,7 @@ Stacks with other cargo expansions.</desc>
 	<length>0</length>
 	<rarity>0</rarity>
 	<power>0</power>
-	<cost>125</cost>
+	<cost>200</cost>
 	<image>beam_contact</image>
 	<weaponArt>invisible</weaponArt>
     <iconReplace>arc_trade_license_all</iconReplace>
@@ -396,13 +434,7 @@ Stacks with other cargo expansions.</desc>
 	<title>Trading License [C1vi|i@n]</title>
 	<short>License [C1vi|i@n]</short>
 	<desc>Allows you to trade at planets belonging to the following factions/locations;
-	Union
-	Militia
-	Federation
-	Free Mantis
-	Mining
-	???
-	Node 17
+	Corrupted...
 	</desc>
 	<tooltip>Storage Weapon</tooltip>
 	<damage>0</damage>

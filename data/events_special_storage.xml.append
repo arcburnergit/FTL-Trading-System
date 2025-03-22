@@ -5,7 +5,274 @@
     <text>View your Trading Licenses.</text>
     <event load="ARC_TRADE_LICENSES"/>
   </mod-append:choice>
+  <mod-append:choice req="ARC_TRADE_LICENSE_LIST_EX" hidden="true" blue="true">
+    <text>Internalize a License.</text>
+    <event load="ARC_TRADE_LICENSES_EXTERNAL"/>
+  </mod-append:choice>
 </mod:findName>
+
+<event name="ARC_TRADE_LICENSES_EXTERNAL">
+  <text>Internalize a License:</text>
+  <choice hidden="true">
+    <text>Nevermind.</text>
+    <event load="STORAGE_CHECK"/>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_ALL_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [All]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_ALL"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_ALL</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_CIV_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Civlian]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_CIV"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_CIV</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_HACKER_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [C1vi|i@n]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_HACKER"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_HACKER</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_HARM_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Harmony]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_HARM"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_HARM</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_ZOLT_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Zoltan]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_ZOLT"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_ZOLT</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_ORC_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Orchid]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_ORC"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_ORC</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_OUT_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Outcast]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_OUT"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_OUT</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_CRYS_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Crystal]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_CRYS"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_CRYS</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_SEP_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Seperatist]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_SEP"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_SEP</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_PIRATE_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Pirate]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_PIRATE"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_PIRATE</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_HEKTAR_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Hektar]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_HEKTAR"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_HEKTAR</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_LAN_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Lanius]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_LAN"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_LAN</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_REBEL_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Rebel]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_REBEL"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_REBEL</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_COAL_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Coalition]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_COAL"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_COAL</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_GUILD_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Guild]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_GUILD"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_GUILD</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_SHELL_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Geniocracy]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_SHELL"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_SHELL</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+
+  <choice req="ARC_TRADE_LICENSE_GHOST_INTERNAL" hidden="false" blue="false">
+    <text>Internalize License [Spectral]</text>
+    <event>
+      <text>You open a draw in the piloting room.</text>
+      <remove name="ARC_PREV_TRADE_LICENSE_GHOST"/>
+      <choice hidden="true">
+        <text>Continue...</text>
+        <event>
+          <text>You deposit the license in the draw.</text>
+          <hiddenAug>ARC_TRADE_LICENSE_GHOST</hiddenAug>
+        </event>
+      </choice>
+    </event>
+  </choice>
+</event>
 
 <event name="ARC_TRADE_LICENSES">
   <text>Your Licenses.</text>

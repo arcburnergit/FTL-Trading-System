@@ -8,4 +8,205 @@
 <customTabs enabled="true">
     <tab name="arc_trade" windowPath="upgradeUI/Equipment/arc_trade_main" hasUndo="false"/>
 </customTabs>
+
+<mod:findLike type="store">
+	<mod:findLike type="customStore">
+
+		<mod-append:category type="WEAPONS" group="54">
+      <customTitle>Cargo Expansions</customTitle>
+      <chance>100</chance>
+      <groupChance>25</groupChance>
+
+			<item>
+				<blueprint>ARC_TRADE_EXPANSIONS</blueprint>
+        <modifier min="1" max="1" flat="false"/>
+				<price>-1</price>
+			</item>
+
+		</mod-append:category>
+
+		<mod-append:category type="AUGMENTS" group="54">
+      <customTitle>Cargo Compactors</customTitle>
+      <chance>100</chance>
+      <groupChance>25</groupChance>
+
+			<item>
+				<blueprint>ARC_TRADE_COMPACTORS</blueprint>
+        <modifier min="1" max="1" flat="false"/>
+				<price>-1</price>
+			</item>
+
+		</mod-append:category>
+
+		<mod-append:category type="WEAPONS" group="54">
+      <customTitle>Trading Licenses</customTitle>
+      <chance>70</chance>
+      <groupChance>50</groupChance>
+
+			<item>
+				<blueprint>ARC_TRADE_LICENSE_LIST_EX</blueprint>
+        <modifier min="1" max="1" flat="false"/>
+				<price>-1</price>
+			</item>
+
+		</mod-append:category>
+
+	</mod:findLike>
+</mod:findLike>
+
+<events>
+	<req name="ARC_TRADE_LICENSE_ALL_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_ALL</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_ALL</name>
+		</req>
+	</req>
+
+	<req name="ARC_TRADE_LICENSE_CIV_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_CIV</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_CIV</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_HACKER_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_HACKER</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_HACKER</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_HARM_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_HARM</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_HARM</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_ZOLT_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_ZOLT</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_ZOLT</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_ORC_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_ORC</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_ORC</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_OUT_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_OUT</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_OUT</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_CRYS_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_CRYS</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_CRYS</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_SEP_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_SEP</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_SEP</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_PIRATE_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_PIRATE</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_PIRATE</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_HEKTAR_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_HEKTAR</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_HEKTAR</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_LAN_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_LAN</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_LAN</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_REBEL_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_REBEL</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_REBEL</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_COAL_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_COAL</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_COAL</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_GUILD_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_GUILD</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_GUILD</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_SHELL_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_SHELL</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_SHELL</name>
+		</req>
+	</req>
+  
+	<req name="ARC_TRADE_LICENSE_GHOST_INTERNAL" type="all">
+		<req type="any">
+      <name>ARC_PREV_TRADE_LICENSE_GHOST</name>
+		</req>
+		<req lvl="0" max_lvl="0">
+      <name>ARC_TRADE_LICENSE_GHOST</name>
+		</req>
+	</req>
+
+</events>
 </FTL>
